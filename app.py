@@ -22,14 +22,24 @@ PROFILE = {
     "photo": "profile.jpg",
     "banner": "banner.jpg",
     "bio": (
-        "I am especially focused on biomaterials, and I work on developing bioresponsive "
-        "hydrogel systems that aim to mimic the regenerative properties of synovial fluid. "
-        "My goal is to transform scientific research into healthcare solutions that can be "
-        "applied in real life.\n\n"
-        "Throughout my academic journey, I have taken part in international projects, won "
-        "awards in chemistry, and contributed to science communication.\n\n"
-        "For me, science begins with asking the right questions, and I continue to follow "
-        "those questions with curiosity and commitment."
+        "I am a Physiotherapy student with a strong interest in research at the intersection "
+        "of health sciences, chemistry, and experimental biology. My academic focus is driven "
+        "by a commitment to understanding biological systems through structured experimentation, "
+        "data analysis, and interdisciplinary approaches.\n\n"
+        "I conducted a research study titled 'To What Extent Soil Type Affects pH and "
+        "Dehydration Ratio in a Mesocosm,' which was presented at the SciHi Research Symposium "
+        "organized by Robert College and selected as the Best Chemistry Paper. This work "
+        "strengthened my skills in experimental design and scientific communication.\n\n"
+        "In addition to independent research, I take an active role in student clubs and "
+        "scientific communities, where I contribute to research-oriented activities, academic "
+        "events, and collaborative projects. I was also part of a team that achieved 1st place "
+        "worldwide in an international competition, an experience that emphasized teamwork, "
+        "critical thinking, and structured problem solving.\n\n"
+        "Alongside my academic and extracurricular involvement, I have supported scientific "
+        "events and educational initiatives, gaining practical experience in organization, "
+        "communication, and teamwork. I aim to continue developing as a researcher by engaging "
+        "in evidence-based projects that integrate clinical knowledge with experimental science "
+        "and applied research."
     ),
 }
 
@@ -249,6 +259,77 @@ LANGUAGES = [
     "Turkish - Native or bilingual proficiency",
 ]
 
+TEXT = {
+    "en": {
+        "hero_badge": "Personal Website",
+        "about": "About Me",
+        "about_copy": "A closer look at my academic focus, research direction, and motivation.",
+        "projects": "Projects",
+        "projects_copy": "Selected project directions that reflect my interests in technology and impact.",
+        "experience": "Experience",
+        "experience_copy": "Programs, writing, teaching, translation, and creative work that shaped my professional growth.",
+        "education": "Education",
+        "education_copy": "My academic background and student community involvement.",
+        "publications": "Publications",
+        "publications_copy": "Writing and research outputs that reflect my academic interests.",
+        "courses": "Courses",
+        "courses_copy": "Additional learning experiences that expanded my interdisciplinary perspective.",
+        "platforms": "Other Platforms",
+        "platforms_copy": "Places where my work, writing, and professional profile can be found.",
+        "vision": "Vision",
+        "vision_copy": "The direction I want my work to take in science, health, and innovation.",
+        "skills": "Skills",
+        "skills_copy": "A selection of technical, academic, and creative skills.",
+        "languages": "Languages",
+        "languages_copy": "Languages I use in academic, professional, and daily communication.",
+        "volunteer": "Volunteering",
+        "volunteer_copy": "Community work and service experiences that matter to me.",
+        "certificates": "Certificates",
+        "certificates_copy": "Selected certificates, participation records, and training credentials.",
+        "contact": "Contact",
+        "contact_copy": "If you would like to collaborate, connect, or discuss research, I would be glad to hear from you.",
+        "connect": "Let's connect.",
+        "location": "Location",
+        "email": "Email",
+        "show_credential": "Open credential",
+        "lang_label": "Language",
+    },
+    "tr": {
+        "hero_badge": "Kisisel Website",
+        "about": "Hakkimda",
+        "about_copy": "Akademik odagim, arastirma yonelimim ve motivasyonuma daha yakindan bir bakis.",
+        "projects": "Projeler",
+        "projects_copy": "Teknoloji ve etki alanindaki ilgilerimi yansitan proje yonelimleri.",
+        "experience": "Deneyim",
+        "experience_copy": "Gelisimimi sekillendiren programlar, yazilar, egitmenlik ve yaratici deneyimler.",
+        "education": "Egitim",
+        "education_copy": "Akademik gecmisim ve ogrenci topluluklarindaki katkim.",
+        "publications": "Yayinlar",
+        "publications_copy": "Akademik ilgilerimi yansitan yazilar ve arastirma ciktilari.",
+        "courses": "Egitimler",
+        "courses_copy": "Disiplinlerarasi bakisimi genisleten ek ogrenme deneyimleri.",
+        "platforms": "Diger Platformlar",
+        "platforms_copy": "Calismalarimin ve profesyonel profilimin yer aldigi platformlar.",
+        "vision": "Vizyon",
+        "vision_copy": "Bilim, saglik ve inovasyonda calismamin ilerlemesini istedigim yon.",
+        "skills": "Yetenekler",
+        "skills_copy": "Teknik, akademik ve yaratici yeteneklerimden secmeler.",
+        "languages": "Diller",
+        "languages_copy": "Akademik, profesyonel ve gundelik iletisimde kullandigim diller.",
+        "volunteer": "Gonulluluk",
+        "volunteer_copy": "Benim icin anlamli olan toplumsal katki ve hizmet deneyimleri.",
+        "certificates": "Sertifikalar",
+        "certificates_copy": "Secili sertifikalar, katilim belgeleri ve egitim kayitlari.",
+        "contact": "Iletisim",
+        "contact_copy": "Birlikte calismak, baglanti kurmak ya da arastirma konusmak istersen memnuniyetle iletisime gecerim.",
+        "connect": "Baglanti kuralim.",
+        "location": "Konum",
+        "email": "E-posta",
+        "show_credential": "Belgeyi ac",
+        "lang_label": "Dil",
+    },
+}
+
 VOLUNTEER = [
     {
         "role": "Volunteer Translator",
@@ -373,6 +454,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 56729917140952",
+        "link": "",
     },
     {
         "title": "Women in Technology Online Training",
@@ -380,6 +462,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 48186649352597",
+        "link": "",
     },
     {
         "title": "Financial Literacy Training for Individuals",
@@ -387,6 +470,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 08051850904435",
+        "link": "",
     },
     {
         "title": "3rd Traditional Sports Health Symposium",
@@ -425,6 +509,7 @@ CERTIFICATES = [
         "logo": "kodluyoruz_logo.jpg",
         "date": "Issued Mar 2026",
         "description": "Credential ID 97481064981018",
+        "link": "",
     },
     {
         "title": "Intro to Data Science",
@@ -432,6 +517,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Jul 2024",
         "description": "Credential ID 83a79daf-41de-4346-a2d3-459fcda1b7c2",
+        "link": "",
     },
     {
         "title": "Girls Who Code: Basic Neural Nets",
@@ -439,6 +525,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Jul 2024",
         "description": "Credential ID 77b0f670-d55e-45f5-a5da-cab92a767b8c",
+        "link": "",
     },
     {
         "title": "YetGen Trainee",
@@ -453,6 +540,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID 4e2dfdb2-449c-4a46-b3f2-f9b94f7b5262",
+        "link": "",
     },
     {
         "title": "Girls Who Code: Morgan Stanley p5.js",
@@ -460,6 +548,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID e377a882-6f2f-4f54-be33-0a443c4f6481",
+        "link": "",
     },
     {
         "title": "Girls Who Code: Morgan Stanley Game Design",
@@ -467,6 +556,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID 0d421638-2257-4a71-9188-7c901a28cf40 | Skills: JavaScript",
+        "link": "",
     },
     {
         "title": "Yarini Kodlayanlar Egitmen Egitimi",
@@ -474,6 +564,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Sep 2022",
         "description": "Credential ID 74692177895354",
+        "link": "",
     },
     {
         "title": "YetGen x Habitat Dernegi Kariyerin Icin Ilk Adim",
@@ -481,6 +572,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Sep 2022",
         "description": "Credential ID 72728422896635",
+        "link": "",
     },
     {
         "title": "Introduction to Chemistry: Reactions and Ratios",
@@ -488,12 +580,14 @@ CERTIFICATES = [
         "logo": "duke_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Skills: Chemistry",
+        "link": "",
     },
     {
         "title": "Photojournalism as Art",
         "issuer": "The School of the New York Times",
         "date": "Issued Aug 2022",
         "description": "Credential ID 56715521 | Skills: Photography",
+        "link": "",
     },
 ]
 
@@ -505,19 +599,19 @@ def inject_styles() -> None:
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap');
 
         :root {
-            --text: #1a1714;
-            --muted: #665f58;
-            --accent: #af5a3c;
-            --card: rgba(255, 250, 244, 0.84);
-            --line: rgba(26, 23, 20, 0.08);
-            --shadow: 0 24px 60px rgba(88, 61, 43, 0.12);
+            --text: #e8eefc;
+            --muted: #a9b7d9;
+            --accent: #8db2ff;
+            --card: rgba(10, 18, 44, 0.84);
+            --line: rgba(182, 202, 255, 0.12);
+            --shadow: 0 24px 60px rgba(1, 6, 20, 0.35);
         }
 
         .stApp {
             background:
-                radial-gradient(circle at top left, rgba(193, 96, 56, 0.18), transparent 30%),
-                radial-gradient(circle at top right, rgba(109, 153, 138, 0.14), transparent 26%),
-                linear-gradient(180deg, #f9f2e8 0%, #f4ebdf 50%, #efe5da 100%);
+                radial-gradient(circle at top left, rgba(88, 129, 255, 0.22), transparent 26%),
+                radial-gradient(circle at top right, rgba(53, 92, 212, 0.28), transparent 24%),
+                linear-gradient(180deg, #071124 0%, #0a1632 45%, #0d1b3b 100%);
         }
 
         [data-testid="stHeader"] { background: transparent; }
@@ -541,7 +635,7 @@ def inject_styles() -> None:
             position: sticky;
             top: 0.6rem;
             z-index: 10;
-            background: rgba(255, 250, 244, 0.72);
+            background: rgba(10, 18, 44, 0.78);
             backdrop-filter: blur(12px);
             border: 1px solid var(--line);
             border-radius: 999px;
@@ -562,9 +656,9 @@ def inject_styles() -> None:
             padding: 1.2rem 1.2rem 3rem 1.2rem;
             border-radius: 32px;
             background:
-                linear-gradient(135deg, rgba(255, 250, 244, 0.92), rgba(246, 229, 211, 0.72)),
-                linear-gradient(120deg, rgba(201,111,59,0.08), rgba(89,126,107,0.08));
-            border: 1px solid rgba(27, 26, 23, 0.08);
+                linear-gradient(135deg, rgba(13, 24, 58, 0.95), rgba(10, 18, 44, 0.88)),
+                linear-gradient(120deg, rgba(88,129,255,0.08), rgba(28,57,132,0.10));
+            border: 1px solid rgba(182, 202, 255, 0.10);
             box-shadow: var(--shadow);
         }
 
@@ -572,7 +666,7 @@ def inject_styles() -> None:
             overflow: hidden;
             border-radius: 26px;
             margin-bottom: 1.4rem;
-            border: 1px solid var(--line);
+            border: 1px solid rgba(141, 178, 255, 0.18);
             box-shadow: var(--shadow);
         }
 
@@ -587,7 +681,7 @@ def inject_styles() -> None:
             width: 170px;
             height: 170px;
             border-radius: 28px;
-            background: linear-gradient(135deg, rgba(175,90,60,0.16), rgba(109,153,138,0.18));
+            background: linear-gradient(135deg, rgba(88,129,255,0.24), rgba(34,67,160,0.22));
             border: 1px solid var(--line);
             display: flex;
             align-items: center;
@@ -613,7 +707,7 @@ def inject_styles() -> None:
             padding: 0.45rem 0.85rem;
             border-radius: 999px;
             background: rgba(175, 90, 60, 0.10);
-            color: #7d3a23;
+            color: #b8ceff;
             font-size: 0.86rem;
             font-weight: 800;
             letter-spacing: 0.04em;
@@ -678,7 +772,7 @@ def inject_styles() -> None:
 
         .project-title {
             font-family: "Space Grotesk", sans-serif;
-            font-size: 1.15rem;
+            font-size: 1.02rem;
             margin-bottom: 0.35rem;
         }
 
@@ -698,7 +792,7 @@ def inject_styles() -> None:
             display: block;
             padding: 0.95rem 1rem;
             border-radius: 18px;
-            background: rgba(255,255,255,0.46);
+            background: rgba(18, 29, 68, 0.72);
             border: 1px solid var(--line);
             text-decoration: none;
             color: var(--text) !important;
@@ -716,10 +810,7 @@ def inject_styles() -> None:
         }
 
         .logo-box {
-            background: rgba(255,255,255,0.72);
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 0.45rem;
+            padding: 0;
         }
 
         ul.clean-list {
@@ -737,7 +828,7 @@ def inject_styles() -> None:
             margin-top: 1.3rem;
             padding: 1.5rem;
             border-radius: 26px;
-            background: linear-gradient(135deg, rgba(201,111,59,0.12), rgba(89,126,107,0.10));
+            background: linear-gradient(135deg, rgba(88,129,255,0.14), rgba(33,58,130,0.18));
             border: 1px solid var(--line);
         }
 
@@ -773,14 +864,27 @@ def image_exists(path: str) -> bool:
     return bool(path) and Path(path).exists()
 
 
-def render_logo_card(title: str, subtitle: str, body: str = "", bullets: list[str] | None = None, logo: str = "") -> None:
+language = st.sidebar.selectbox("Language / Dil", ["en", "tr"], format_func=lambda x: "English" if x == "en" else "Turkce")
+
+
+def t(key: str) -> str:
+    return TEXT[language][key]
+
+
+def render_logo_card(
+    title: str,
+    subtitle: str,
+    body: str = "",
+    bullets: list[str] | None = None,
+    logo: str = "",
+    link: str = "",
+    link_label: str = "",
+) -> None:
     st.markdown("<div class='entry-wrap'>", unsafe_allow_html=True)
     left, right = st.columns([0.16, 0.84], vertical_alignment="top")
     with left:
         if image_exists(logo):
-            st.markdown("<div class='logo-box'>", unsafe_allow_html=True)
             st.image(logo, use_container_width=True)
-            st.markdown("</div>", unsafe_allow_html=True)
     with right:
         st.markdown(f"<div class='project-title'>{title}</div>", unsafe_allow_html=True)
         st.markdown(f"<p class='small-muted'>{subtitle}</p>", unsafe_allow_html=True)
@@ -788,6 +892,9 @@ def render_logo_card(title: str, subtitle: str, body: str = "", bullets: list[st
             st.markdown(f"<p class='small-muted'>{body}</p>", unsafe_allow_html=True)
         if bullets:
             st.markdown(render_bullet_list(bullets), unsafe_allow_html=True)
+        if link:
+            label = link_label or t("show_credential")
+            st.markdown(f"<a class='platform-link' href='{link}' target='_blank'>{label}</a>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -805,13 +912,19 @@ st.markdown(
         <a href="#courses">Courses</a>
         <a href="#platforms">Platforms</a>
         <a href="#vision">Vision</a>
-        <a href="#skills">Skills</a>
-        <a href="#languages">Languages</a>
-        <a href="#volunteer">Volunteer</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#skills">{skills}</a>
+        <a href="#languages">{languages}</a>
+        <a href="#volunteer">{volunteer}</a>
+        <a href="#certificates">{certificates}</a>
+        <a href="#contact">{contact}</a>
     </div>
-    """,
+    """.format(
+        skills=t("skills"),
+        languages=t("languages"),
+        volunteer=t("volunteer"),
+        certificates=t("certificates"),
+        contact=t("contact"),
+    ),
     unsafe_allow_html=True,
 )
 
@@ -837,7 +950,7 @@ with hero_left:
 with hero_right:
     st.markdown(
         f"""
-        <span class="eyebrow">Personal Website</span>
+        <span class="eyebrow">{t("hero_badge")}</span>
         <h1>{PROFILE["name"]}</h1>
         <p><strong>{PROFILE["title"]}</strong></p>
         <p>{PROFILE["tagline"]}</p>
@@ -867,7 +980,7 @@ st.markdown(
 )
 
 st.write("")
-section_header("about", "About Me", "A closer look at my scientific interests, motivation, and academic direction.")
+section_header("about", t("about"), t("about_copy"))
 st.markdown(
     f"""
     <div class="section-card">
@@ -878,7 +991,7 @@ st.markdown(
 )
 
 st.write("")
-section_header("projects", "Projects", "Selected project directions that reflect my interests in technology and impact.")
+section_header("projects", t("projects"), t("projects_copy"))
 project_cols = st.columns(2)
 for col, project in zip(project_cols, PROJECTS):
     with col:
@@ -894,7 +1007,7 @@ for col, project in zip(project_cols, PROJECTS):
         )
 
 st.write("")
-section_header("experience", "Experience", "Programs, writing, teaching, translation, and creative work that shaped my professional growth.")
+section_header("experience", t("experience"), t("experience_copy"))
 for item in EXPERIENCE:
     render_logo_card(
         title=item["role"],
@@ -904,7 +1017,7 @@ for item in EXPERIENCE:
     )
 
 st.write("")
-section_header("education", "Education", "My academic background and student community involvement.")
+section_header("education", t("education"), t("education_copy"))
 edu_cols = st.columns(2)
 for col, item in zip(edu_cols, EDUCATION):
     with col:
@@ -916,7 +1029,7 @@ for col, item in zip(edu_cols, EDUCATION):
         )
 
 st.write("")
-section_header("publications", "Publications", "Writing and research outputs that reflect my academic interests.")
+section_header("publications", t("publications"), t("publications_copy"))
 for item in PUBLICATIONS:
     st.markdown(
         f"""
@@ -930,7 +1043,7 @@ for item in PUBLICATIONS:
     )
 
 st.write("")
-section_header("courses", "Courses", "Additional learning experiences that expanded my interdisciplinary perspective.")
+section_header("courses", t("courses"), t("courses_copy"))
 course_cols = st.columns(2)
 for idx, course in enumerate(COURSES):
     with course_cols[idx % 2]:
@@ -944,7 +1057,7 @@ for idx, course in enumerate(COURSES):
         )
 
 st.write("")
-section_header("platforms", "Other Platforms", "Places where my work, writing, and professional profile can be found.")
+section_header("platforms", t("platforms"), t("platforms_copy"))
 platform_left, platform_right = st.columns([1, 1.2])
 with platform_left:
     cards = "".join(
@@ -966,7 +1079,7 @@ with platform_right:
     )
 
 st.write("")
-section_header("vision", "Vision", "The direction I want my work to take in science, health, and innovation.")
+section_header("vision", t("vision"), t("vision_copy"))
 vision_cols = st.columns(3)
 for col, item in zip(vision_cols, VISION_POINTS):
     with col:
@@ -980,17 +1093,17 @@ for col, item in zip(vision_cols, VISION_POINTS):
         )
 
 st.write("")
-section_header("skills", "Skills", "A selection of technical, academic, and creative skills.")
+section_header("skills", t("skills"), t("skills_copy"))
 skill_html = "".join(f"<div class='chip'>{skill}</div>" for skill in SKILLS)
 st.markdown(f"<div class='section-card'>{skill_html}</div>", unsafe_allow_html=True)
 
 st.write("")
-section_header("languages", "Languages", "Languages I use in academic, professional, and daily communication.")
+section_header("languages", t("languages"), t("languages_copy"))
 language_html = "".join(f"<div class='chip'>{language}</div>" for language in LANGUAGES)
 st.markdown(f"<div class='section-card'>{language_html}</div>", unsafe_allow_html=True)
 
 st.write("")
-section_header("volunteer", "Volunteering", "Community work and service experiences that matter to me.")
+section_header("volunteer", t("volunteer"), t("volunteer_copy"))
 for item in VOLUNTEER:
     render_logo_card(
         title=item["role"],
@@ -1000,7 +1113,7 @@ for item in VOLUNTEER:
     )
 
 st.write("")
-section_header("certificates", "Certificates", "Selected certificates, participation records, and training credentials.")
+section_header("certificates", t("certificates"), t("certificates_copy"))
 cert_cols = st.columns(2)
 for index, cert in enumerate(CERTIFICATES):
     with cert_cols[index % 2]:
@@ -1009,16 +1122,17 @@ for index, cert in enumerate(CERTIFICATES):
             subtitle=f"<strong>{cert['issuer']}</strong><br>{cert['date']}",
             body=cert["description"],
             logo=cert.get("logo", ""),
+            link=cert.get("link", ""),
         )
 
 st.write("")
-section_header("contact", "Contact", "If you would like to collaborate, connect, or discuss research, I would be glad to hear from you.")
+section_header("contact", t("contact"), t("contact_copy"))
 st.markdown(
     f"""
     <div class="footer-box">
-        <div class="project-title">Let's connect.</div>
-        <p class="small-muted">Location: {PROFILE["location"]}</p>
-        <p class="small-muted">Email: {PROFILE["email"]}</p>
+        <div class="project-title">{t("connect")}</div>
+        <p class="small-muted">{t("location")}: {PROFILE["location"]}</p>
+        <p class="small-muted">{t("email")}: {PROFILE["email"]}</p>
     </div>
     """,
     unsafe_allow_html=True,

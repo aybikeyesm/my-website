@@ -257,6 +257,7 @@ COURSES = [
 PLATFORMS = [
     ("GitHub", "https://github.com/aybikeyesm"),
     ("LinkedIn", "https://www.linkedin.com/in/aybikeyesimeskibozkurt"),
+    ("Instagram", "https://instagram.com/"),
     ("Email", "mailto:aybikeeskibozkurt@gmail.com"),
 ]
 
@@ -628,6 +629,19 @@ def inject_styles() -> None:
             color: {"#edf4ff" if theme_name == "Dark" else "#22314e"} !important;
         }}
 
+        [data-testid="stSidebar"] label,
+        [data-testid="stSidebar"] .stMarkdown,
+        [data-testid="stSidebar"] p,
+        [data-testid="stSidebar"] span,
+        [data-testid="stSidebar"] div {{
+            color: {"#ffffff" if theme_name == "Dark" else "#22314e"} !important;
+        }}
+
+        [data-testid="stSidebar"] [data-baseweb="select"] > div {{
+            background: {"rgba(255, 255, 255, 0.08)" if theme_name == "Dark" else "rgba(255, 255, 255, 0.92)"} !important;
+            border-color: {theme["line"]} !important;
+        }}
+
         .block-container {{
             padding-top: 1.4rem;
             padding-bottom: 4rem;
@@ -707,6 +721,7 @@ def inject_styles() -> None:
             line-height: 0.95;
             margin: 1rem 0 0.7rem 0;
             color: var(--text);
+            text-shadow: {"0 2px 12px rgba(0, 0, 0, 0.28)" if theme_name == "Dark" else "none"};
         }}
 
         .hero p {{
@@ -714,6 +729,10 @@ def inject_styles() -> None:
             color: {theme["hero_text"]};
             max-width: 760px;
             line-height: 1.8;
+        }}
+
+        .hero strong {{
+            color: var(--text);
         }}
 
         .stat-grid {{
@@ -766,8 +785,13 @@ def inject_styles() -> None:
 
         .about-text {{
             font-size: 1rem;
-            line-height: 1.43;
+            line-height: 1.34;
             color: var(--text);
+            margin: 0;
+        }}
+
+        .about-text br {{
+            line-height: 1.1;
         }}
 
         .section-title {{
@@ -1026,7 +1050,7 @@ section_header("about", t("about"), t("about_copy"))
 st.markdown(
     f"""
     <div class="section-card">
-        <p class="about-text">{PROFILE["bio"].replace(chr(10), "<br><br>")}</p>
+        <p class="about-text">{PROFILE["bio"].replace(chr(10) + chr(10), "<br>").replace(chr(10), "<br>")}</p>
     </div>
     """,
     unsafe_allow_html=True,

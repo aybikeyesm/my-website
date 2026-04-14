@@ -734,7 +734,15 @@ def inject_styles() -> None:
         }}
 
         .hero strong {{
-            color: var(--text);
+            color: {theme["hero_text"]} !important;
+        }}
+
+        .hero-subtitle {{
+            color: {theme["hero_text"]} !important;
+        }}
+
+        .hero-tagline {{
+            color: {theme["hero_text"]} !important;
         }}
 
         .stat-grid {{
@@ -1032,8 +1040,8 @@ with hero_right:
         f"""
         <span class="eyebrow">{t("hero_badge")}</span>
         <h1>{PROFILE["name"]}</h1>
-        <p><strong>{PROFILE["title"]}</strong></p>
-        <p>{PROFILE["tagline"]}</p>
+        <p class="hero-subtitle"><strong>{PROFILE["title"]}</strong></p>
+        <p class="hero-tagline">{PROFILE["tagline"]}</p>
         """,
         unsafe_allow_html=True,
     )

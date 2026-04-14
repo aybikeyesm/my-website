@@ -20,32 +20,17 @@ PROFILE = {
     "banner": "banner.jpg",
     "bio": (
         "Hi, I'm Aybike.\n\n"
-        "I am an aspiring physiotherapist and researcher, driven by a deep curiosity about how science can "
-        "improve human health and quality of life. My journey into science has not been a straight path, it "
-        "has been shaped by challenges, moments of uncertainty, and experiences that pushed me to rediscover "
-        "my own potential. These turning points have not only strengthened my resilience but also defined the "
-        "way I approach learning, research, and personal growth.\n\n"
-        "My primary interest lies at the intersection of health sciences, biomaterials, and innovation. I am "
-        "currently focused on developing a bioinspired material that mimics the properties of synovial fluid, "
-        "aiming to improve joint function and support regenerative processes. This project reflects my broader "
-        "goal: transforming scientific knowledge into practical, real-world solutions that can make a meaningful "
-        "difference in people's lives.\n\n"
-        "Throughout my academic journey, I have actively engaged in research, science communication, and "
-        "interdisciplinary learning. I had the opportunity to participate in international programs and "
-        "contribute to projects that combine environmental awareness with scientific thinking. One of the "
-        "defining moments in my journey was receiving recognition for my work in chemistry at an international "
-        "science symposium, an experience that reshaped my perspective and strengthened my commitment to "
-        "pursuing research.\n\n"
-        "Beyond academics, I am passionate about continuous learning and self-development. I have explored "
-        "different areas such as coding, digital literacy education, and creative communication. I enjoy "
-        "sharing knowledge, mentoring, and being part of communities that aim to create impact through "
-        "collaboration and innovation.\n\n"
-        "I believe that progress is built on consistency, curiosity, and the courage to keep going even when "
-        "the path is unclear. For me, being a scientist is not only about knowledge, it is about asking "
-        "meaningful questions, embracing uncertainty, and continuously evolving.\n\n"
-        "This space is where I document my journey, my ideas, projects, experiments, and reflections. It "
-        "represents not only what I have done so far, but also the direction I am heading toward.\n\n"
-        "Because I believe that even the smallest steps, when taken with intention, can lead to significant impact."
+        "I am an aspiring physiotherapist and researcher with a strong interest in the intersection of health, "
+        "science, and innovation. My journey has been shaped by both challenges and achievements, which helped "
+        "me develop resilience and a deeper understanding of my goals.\n\n"
+        "Currently, I am working on developing a bioinspired material that mimics the properties of synovial "
+        "fluid, aiming to improve joint function and support regenerative processes. My goal is to turn "
+        "scientific knowledge into practical solutions that can make a real impact on human health.\n\n"
+        "Throughout my journey, I have participated in international programs, worked on research projects, "
+        "and received recognition in the field of chemistry. These experiences strengthened my passion for "
+        "science and my commitment to continuous learning.\n\n"
+        "I believe that meaningful progress comes from curiosity, consistency, and the courage to keep "
+        "exploring. This space reflects my journey, where I share my ideas, projects, and growth as a future scientist."
     ),
 }
 
@@ -57,14 +42,14 @@ THEMES = {
         "glow_one": "rgba(88, 129, 255, 0.22)",
         "glow_two": "rgba(53, 92, 212, 0.28)",
         "text": "#f8fbff",
-        "muted": "#edf3ff",
+        "muted": "#ffffff",
         "accent": "#9fc0ff",
         "card": "rgba(10, 18, 44, 0.88)",
         "line": "rgba(182, 202, 255, 0.14)",
         "sidebar": "rgba(7, 14, 34, 0.94)",
         "nav": "rgba(10, 18, 44, 0.78)",
-        "hero_text": "#f6f9ff",
-        "section_copy": "#f0f5ff",
+        "hero_text": "#ffffff",
+        "section_copy": "#ffffff",
         "platform_bg": "rgba(18, 29, 68, 0.80)",
         "footer_bg": "linear-gradient(135deg, rgba(88,129,255,0.16), rgba(33,58,130,0.22))",
         "chip_bg": "rgba(159, 192, 255, 0.10)",

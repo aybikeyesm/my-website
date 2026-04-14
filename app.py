@@ -1558,7 +1558,7 @@ for item in VOLUNTEER:
 
 st.write("")
 section_header("certificates", t("certificates"), t("certificates_copy"))
-cert_cols = st.columns(2)
+cert_cols = st.columns(2) 
 for index, cert in enumerate(CERTIFICATES):
     with cert_cols[index % 2]:
         render_logo_card(

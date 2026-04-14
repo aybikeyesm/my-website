@@ -254,6 +254,27 @@ COURSES = [
     "🌱 YetGen",
 ]
 
+LEARNING_DATA = {
+    "today_learned": (
+        "Worked on Python practice, reviewed anatomy notes, and tracked steady progress "
+        "for this week."
+    ),
+    "weekly": {
+        "German": 61,
+        "Python": 72,
+        "Web Design": 68,
+        "Literature Review": 57,
+        "Creativity": 74,
+    },
+    "monthly": {
+        "German": 69,
+        "Python": 81,
+        "Web Design": 76,
+        "Literature Review": 65,
+        "Creativity": 79,
+    },
+}
+
 PLATFORMS = [
     ("GitHub", "https://github.com/aybikeyesm"),
     ("LinkedIn", "https://www.linkedin.com/in/aybikeyesimeskibozkurt"),
@@ -296,6 +317,8 @@ TEXT = {
         "courses_copy": "Additional learning experiences that expanded my interdisciplinary perspective.",
         "platforms": "🌐 Other Platforms",
         "platforms_copy": "Places where my work, writing, and professional profile can be found.",
+        "learning": "📈 My Learning Dashboard",
+        "learning_copy": "A living study area where daily learning and weekly or monthly progress stay visible.",
         "skills": "🧠 Skills",
         "skills_copy": "A selection of technical, academic, and creative skills.",
         "languages": "🗣️ Languages",
@@ -316,6 +339,15 @@ TEXT = {
         "stats_two_copy": "Biomaterials, rehabilitation, and practical impact",
         "stats_three": "Growth Journey",
         "stats_three_copy": "Resilience, teamwork, and continuous self-development",
+        "today_learned": "What I Learned Today",
+        "weekly_view": "Weekly View",
+        "monthly_view": "Monthly View",
+        "owner_mode": "Owner Mode",
+        "owner_mode_copy": "Enable editing for your own updates. Visitors see read-only progress.",
+        "update_today": "Update today's learning note",
+        "dashboard_note": "Interactive for me, view-only for visitors.",
+        "weekly_average": "Weekly productivity average",
+        "monthly_average": "Monthly productivity average",
     },
     "tr": {
         "hero_badge": "Kisisel Website",
@@ -333,6 +365,8 @@ TEXT = {
         "courses_copy": "Disiplinlerarasi bakisimi genisleten ek ogrenme deneyimleri.",
         "platforms": "🌐 Diger Platformlar",
         "platforms_copy": "Calismalarimin ve profesyonel profilimin yer aldigi platformlar.",
+        "learning": "📈 Ogrenme Panom",
+        "learning_copy": "Gunluk ogrenmelerimi ve haftalik ya da aylik ilerlememi gorunur tutan canli bir alan.",
         "skills": "🧠 Yetenekler",
         "skills_copy": "Teknik, akademik ve yaratici yeteneklerimden secmeler.",
         "languages": "🗣️ Diller",
@@ -353,6 +387,15 @@ TEXT = {
         "stats_two_copy": "Biyomalzemeler, rehabilitasyon ve gercek etki",
         "stats_three": "Gelisim Yolculugu",
         "stats_three_copy": "Dayaniklilik, ekip calismasi ve surekli gelisim",
+        "today_learned": "Bugun Ne Ogrendim",
+        "weekly_view": "Haftalik Gorunum",
+        "monthly_view": "Aylik Gorunum",
+        "owner_mode": "Sahip Modu",
+        "owner_mode_copy": "Kendi guncellemelerin icin duzenlemeyi ac. Ziyaretciler sadece gorur.",
+        "update_today": "Bugun ogrendigim notunu guncelle",
+        "dashboard_note": "Benim icin etkilesimli, ziyaretciler icin sadece gorunum.",
+        "weekly_average": "Haftalik verimlilik ortalamasi",
+        "monthly_average": "Aylik verimlilik ortalamasi",
     },
 }
 
@@ -593,6 +636,16 @@ def t(key: str) -> str:
     return TEXT[language][key]
 
 
+if "learning_today" not in st.session_state:
+    st.session_state.learning_today = LEARNING_DATA["today_learned"]
+
+if "learning_weekly" not in st.session_state:
+    st.session_state.learning_weekly = LEARNING_DATA["weekly"].copy()
+
+if "learning_monthly" not in st.session_state:
+    st.session_state.learning_monthly = LEARNING_DATA["monthly"].copy()
+
+
 def inject_styles() -> None:
     st.markdown(
         f"""
@@ -608,6 +661,13 @@ def inject_styles() -> None:
             --shadow: 0 24px 60px rgba(1, 6, 20, 0.35);
             --button: {theme["button"]};
             --button-text: {theme["button_text"]};
+            --cursor-fill: {"#93d5ff" if theme_name == "Dark" else "#58b9e8"};
+            --cursor-outline: {"#dff8ff" if theme_name == "Dark" else "#e8fbff"};
+            --smoke-core: {"rgba(214, 229, 255, 0.26)" if theme_name == "Dark" else "rgba(165, 178, 196, 0.22)"};
+            --smoke-edge: {"rgba(255, 255, 255, 0.06)" if theme_name == "Dark" else "rgba(108, 124, 148, 0.10)"};
+            --factory-body: {"rgba(12, 22, 50, 0.86)" if theme_name == "Dark" else "rgba(198, 208, 228, 0.54)"};
+            --factory-stack: {"rgba(18, 30, 63, 0.94)" if theme_name == "Dark" else "rgba(180, 191, 214, 0.82)"};
+            --factory-window: {"rgba(146, 201, 255, 0.85)" if theme_name == "Dark" else "rgba(78, 120, 198, 0.55)"};
         }}
 
         .stApp {{
@@ -615,6 +675,16 @@ def inject_styles() -> None:
                 radial-gradient(circle at top left, {theme["glow_one"]}, transparent 26%),
                 radial-gradient(circle at top right, {theme["glow_two"]}, transparent 24%),
                 linear-gradient(180deg, {theme["bg_start"]} 0%, {theme["bg_mid"]} 45%, {theme["bg_end"]} 100%);
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'%3E%3Cpath d='M17 3C13 9 8 14 8 20a9 9 0 0 0 18 0c0-6-5-11-9-17Z' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M17 3C13 9 8 14 8 20a9 9 0 0 0 18 0c0-6-5-11-9-17Z' fill='%23ffffff' stroke='%23ffffff' stroke-opacity='0.92' stroke-width='1.5'/%3E%3Cpath d='M17 4.8C13.6 10.1 9.8 14.8 9.8 20a7.2 7.2 0 0 0 14.4 0c0-5.2-3.8-9.9-7.2-15.2Z' fill='COLOR_FILL'/%3E%3Cpath d='M18.2 9.2c-1.5 2.4-3 4.3-3 6.9a4.2 4.2 0 0 0 2.1 3.7c-2.8-.3-4.6-2.3-4.6-5 0-2.4 1.8-5.1 5.5-9.1Z' fill='COLOR_HIGHLIGHT' fill-opacity='0.65'/%3E%3C/svg%3E"), 8 4, auto;
+        }}
+
+        .stApp,
+        .stApp * {{
+            cursor: inherit;
+        }}
+
+        a, button, [role="button"], input, textarea, select, .stButton button {{
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'%3E%3Cpath d='M17 3C13 9 8 14 8 20a9 9 0 0 0 18 0c0-6-5-11-9-17Z' fill='%23ffffff' fill-opacity='0.18'/%3E%3Cpath d='M17 3C13 9 8 14 8 20a9 9 0 0 0 18 0c0-6-5-11-9-17Z' fill='%23ffffff' stroke='%23ffffff' stroke-opacity='0.92' stroke-width='1.5'/%3E%3Cpath d='M17 4.8C13.6 10.1 9.8 14.8 9.8 20a7.2 7.2 0 0 0 14.4 0c0-5.2-3.8-9.9-7.2-15.2Z' fill='COLOR_FILL'/%3E%3Cpath d='M18.2 9.2c-1.5 2.4-3 4.3-3 6.9a4.2 4.2 0 0 0 2.1 3.7c-2.8-.3-4.6-2.3-4.6-5 0-2.4 1.8-5.1 5.5-9.1Z' fill='COLOR_HIGHLIGHT' fill-opacity='0.65'/%3E%3C/svg%3E"), 8 4, pointer !important;
         }}
 
         [data-testid="stHeader"] {{
@@ -875,6 +945,34 @@ def inject_styles() -> None:
             border-color: var(--accent);
         }}
 
+        .dashboard-meta {{
+            display: inline-block;
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            background: {theme["chip_bg"]};
+            border: 1px solid {theme["chip_border"]};
+            color: var(--text);
+            font-size: 0.88rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }}
+
+        .dashboard-note {{
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 0;
+        }}
+
+        .progress-label {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text);
+            font-weight: 700;
+            margin: 0.8rem 0 0.35rem 0;
+        }}
+
         .entry-logo img {{
             max-width: 58px !important;
             margin: 0 auto;
@@ -901,6 +999,146 @@ def inject_styles() -> None:
             border: 1px solid var(--line);
             box-shadow: var(--shadow);
             animation: fadeUp 0.9s ease;
+        }}
+
+        .factory-scene {{
+            position: fixed;
+            right: 1.4rem;
+            bottom: 1rem;
+            width: min(25vw, 250px);
+            height: 210px;
+            pointer-events: none;
+            z-index: 0;
+            opacity: {"0.95" if theme_name == "Dark" else "0.84"};
+            filter: saturate(1.05);
+        }}
+
+        .factory-ground {{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 8px;
+            height: 12px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, transparent 0%, var(--factory-body) 12%, var(--factory-body) 88%, transparent 100%);
+            opacity: 0.85;
+        }}
+
+        .factory-building {{
+            position: absolute;
+            right: 12px;
+            bottom: 20px;
+            width: 158px;
+            height: 72px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.12), transparent 22%), var(--factory-body);
+            clip-path: polygon(0 38%, 20% 38%, 30% 18%, 42% 38%, 54% 12%, 68% 38%, 100% 38%, 100% 100%, 0 100%);
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 24px 34px rgba(0, 0, 0, 0.18);
+        }}
+
+        .factory-window {{
+            position: absolute;
+            bottom: 24px;
+            width: 16px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--factory-window);
+            box-shadow: 0 0 12px rgba(130, 198, 255, 0.28);
+        }}
+
+        .factory-window.w1 {{ left: 118px; }}
+        .factory-window.w2 {{ left: 142px; }}
+        .factory-window.w3 {{ left: 166px; }}
+
+        .chimney {{
+            position: absolute;
+            bottom: 84px;
+            width: 24px;
+            border-radius: 10px 10px 0 0;
+            background: linear-gradient(180deg, rgba(255,255,255,0.12), transparent 18%), var(--factory-stack);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+        }}
+
+        .chimney::after {{
+            content: "";
+            position: absolute;
+            left: 2px;
+            right: 2px;
+            top: 6px;
+            height: 4px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.14);
+        }}
+
+        .chimney.one {{
+            right: 126px;
+            height: 94px;
+        }}
+
+        .chimney.two {{
+            right: 84px;
+            height: 120px;
+        }}
+
+        .smoke {{
+            position: absolute;
+            bottom: 0;
+            border-radius: 999px;
+            background:
+                radial-gradient(circle at 35% 35%, rgba(255,255,255,0.30), transparent 52%),
+                radial-gradient(circle at 68% 68%, var(--smoke-core), transparent 70%),
+                var(--smoke-edge);
+            filter: blur(1px);
+            animation: smokeDrift linear infinite;
+        }}
+
+        .smoke.s1 {{
+            right: 118px;
+            width: 28px;
+            height: 28px;
+            animation-duration: 7.8s;
+            animation-delay: 0.2s;
+        }}
+
+        .smoke.s2 {{
+            right: 79px;
+            width: 34px;
+            height: 34px;
+            animation-duration: 9.4s;
+            animation-delay: 1.1s;
+        }}
+
+        .smoke.s3 {{
+            right: 112px;
+            width: 42px;
+            height: 42px;
+            animation-duration: 10.2s;
+            animation-delay: 2.1s;
+        }}
+
+        .smoke.s4 {{
+            right: 71px;
+            width: 50px;
+            height: 50px;
+            animation-duration: 11.4s;
+            animation-delay: 3.3s;
+        }}
+
+        @keyframes smokeDrift {{
+            0% {{
+                transform: translate(0, 0) scale(0.55);
+                opacity: 0;
+            }}
+            12% {{
+                opacity: 0.6;
+            }}
+            65% {{
+                opacity: 0.34;
+            }}
+            100% {{
+                transform: translate(-58px, -142px) scale(1.5);
+                opacity: 0;
+            }}
         }}
 
         @keyframes fadeUp {{
@@ -945,6 +1183,26 @@ def inject_styles() -> None:
         @media (max-width: 900px) {{
             .stat-grid {{
                 grid-template-columns: 1fr;
+            }}
+
+            .progress-label {{
+                font-size: 0.95rem;
+            }}
+
+            .factory-scene {{
+                width: 170px;
+                height: 160px;
+                right: 0.6rem;
+                bottom: 0.4rem;
+                opacity: 0.55;
+            }}
+        }}
+
+        @media (pointer: coarse) {{
+            .stApp,
+            .stApp *,
+            a, button, [role="button"], input, textarea, select, .stButton button {{
+                cursor: auto !important;
             }}
         }}
         </style>
@@ -1005,11 +1263,31 @@ st.markdown(
         <a href="#publications">Publications</a>
         <a href="#courses">Courses</a>
         <a href="#platforms">Platforms</a>
+        <a href="#learning">Learning</a>
         <a href="#skills">Skills</a>
         <a href="#languages">Languages</a>
         <a href="#volunteer">Volunteer</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    """
+    <div class="factory-scene" aria-hidden="true">
+        <div class="smoke s1"></div>
+        <div class="smoke s2"></div>
+        <div class="smoke s3"></div>
+        <div class="smoke s4"></div>
+        <div class="chimney one"></div>
+        <div class="chimney two"></div>
+        <div class="factory-building"></div>
+        <div class="factory-window w1"></div>
+        <div class="factory-window w2"></div>
+        <div class="factory-window w3"></div>
+        <div class="factory-ground"></div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -1165,6 +1443,98 @@ with platform_right:
         """,
         unsafe_allow_html=True,
     )
+
+st.write("")
+section_header("learning", t("learning"), t("learning_copy"))
+owner_mode = st.toggle(t("owner_mode"), value=False, help=t("owner_mode_copy"))
+
+if owner_mode:
+    st.session_state.learning_today = st.text_area(
+        t("update_today"),
+        value=st.session_state.learning_today,
+        height=120,
+    )
+
+    learn_left, learn_right = st.columns(2)
+    with learn_left:
+        st.markdown(f"**{t('weekly_view')}**")
+        for subject in list(st.session_state.learning_weekly.keys()):
+            st.session_state.learning_weekly[subject] = st.slider(
+                subject,
+                min_value=0,
+                max_value=100,
+                value=st.session_state.learning_weekly[subject],
+                key=f"weekly_{subject}",
+            )
+    with learn_right:
+        st.markdown(f"**{t('monthly_view')}**")
+        for subject in list(st.session_state.learning_monthly.keys()):
+            st.session_state.learning_monthly[subject] = st.slider(
+                f"{subject} ",
+                min_value=0,
+                max_value=100,
+                value=st.session_state.learning_monthly[subject],
+                key=f"monthly_{subject}",
+            )
+
+st.markdown(
+    f"""
+    <div class="section-card">
+        <div class="dashboard-meta">{t("dashboard_note")}</div>
+        <div class="project-title">{t("today_learned")}</div>
+        <p class="dashboard-note">{st.session_state.learning_today}</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+tab_weekly, tab_monthly = st.tabs([t("weekly_view"), t("monthly_view")])
+
+with tab_weekly:
+    week_col, stats_col = st.columns([1.45, 0.85])
+    with week_col:
+        st.markdown("<div class='section-card'>", unsafe_allow_html=True)
+        for subject, progress in st.session_state.learning_weekly.items():
+            st.markdown(
+                f"<div class='progress-label'><span>{subject}</span><span>{progress}%</span></div>",
+                unsafe_allow_html=True,
+            )
+            st.progress(progress)
+        st.markdown("</div>", unsafe_allow_html=True)
+    with stats_col:
+        average = round(sum(st.session_state.learning_weekly.values()) / len(st.session_state.learning_weekly))
+        st.markdown(
+            f"""
+            <div class="stat-card">
+                <div class="stat-value">{average}%</div>
+                <div class="stat-label">{t("weekly_average")}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+with tab_monthly:
+    month_col, stats_col = st.columns([1.45, 0.85])
+    with month_col:
+        st.markdown("<div class='section-card'>", unsafe_allow_html=True)
+        for subject, progress in st.session_state.learning_monthly.items():
+            st.markdown(
+                f"<div class='progress-label'><span>{subject}</span><span>{progress}%</span></div>",
+                unsafe_allow_html=True,
+            )
+            st.progress(progress)
+        st.markdown("</div>", unsafe_allow_html=True)
+    with stats_col:
+        average = round(sum(st.session_state.learning_monthly.values()) / len(st.session_state.learning_monthly))
+        st.markdown(
+            f"""
+            <div class="stat-card">
+                <div class="stat-value">{average}%</div>
+                <div class="stat-label">{t("monthly_average")}</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
 st.write("")
 section_header("skills", t("skills"), t("skills_copy"))

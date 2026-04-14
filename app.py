@@ -14,33 +14,86 @@ PROFILE = {
     "name": "Aybike Yesim Eskibozkurt",
     "title": "Physiotherapy Student | Researcher | Coder",
     "tagline": (
-        "I work across science, research, writing, and technology with a strong interest "
-        "in turning ideas into meaningful impact."
+        "Exploring the intersection of health sciences, biomaterials, research, and innovation."
     ),
     "location": "Istanbul, Turkey",
     "email": "aybikeeskibozkurt@gmail.com",
     "photo": "profile.jpg",
     "banner": "banner.jpg",
     "bio": (
-        "I am a Physiotherapy student with a strong interest in research at the intersection "
-        "of health sciences, chemistry, and experimental biology. My academic focus is driven "
-        "by a commitment to understanding biological systems through structured experimentation, "
-        "data analysis, and interdisciplinary approaches.\n\n"
-        "I conducted a research study titled 'To What Extent Soil Type Affects pH and "
-        "Dehydration Ratio in a Mesocosm,' which was presented at the SciHi Research Symposium "
-        "organized by Robert College and selected as the Best Chemistry Paper. This work "
-        "strengthened my skills in experimental design and scientific communication.\n\n"
-        "In addition to independent research, I take an active role in student clubs and "
-        "scientific communities, where I contribute to research-oriented activities, academic "
-        "events, and collaborative projects. I was also part of a team that achieved 1st place "
-        "worldwide in an international competition, an experience that emphasized teamwork, "
-        "critical thinking, and structured problem solving.\n\n"
-        "Alongside my academic and extracurricular involvement, I have supported scientific "
-        "events and educational initiatives, gaining practical experience in organization, "
-        "communication, and teamwork. I aim to continue developing as a researcher by engaging "
-        "in evidence-based projects that integrate clinical knowledge with experimental science "
-        "and applied research."
+        "Hi, I'm Aybike.\n\n"
+        "I am an aspiring physiotherapist and researcher, driven by a deep curiosity about how science can "
+        "improve human health and quality of life. My journey into science has not been a straight path, it "
+        "has been shaped by challenges, moments of uncertainty, and experiences that pushed me to rediscover "
+        "my own potential. These turning points have not only strengthened my resilience but also defined the "
+        "way I approach learning, research, and personal growth.\n\n"
+        "My primary interest lies at the intersection of health sciences, biomaterials, and innovation. I am "
+        "currently focused on developing a bioinspired material that mimics the properties of synovial fluid, "
+        "aiming to improve joint function and support regenerative processes. This project reflects my broader "
+        "goal: transforming scientific knowledge into practical, real-world solutions that can make a meaningful "
+        "difference in people's lives.\n\n"
+        "Throughout my academic journey, I have actively engaged in research, science communication, and "
+        "interdisciplinary learning. I had the opportunity to participate in international programs and "
+        "contribute to projects that combine environmental awareness with scientific thinking. One of the "
+        "defining moments in my journey was receiving recognition for my work in chemistry at an international "
+        "science symposium, an experience that reshaped my perspective and strengthened my commitment to "
+        "pursuing research.\n\n"
+        "Beyond academics, I am passionate about continuous learning and self-development. I have explored "
+        "different areas such as coding, digital literacy education, and creative communication. I enjoy "
+        "sharing knowledge, mentoring, and being part of communities that aim to create impact through "
+        "collaboration and innovation.\n\n"
+        "I believe that progress is built on consistency, curiosity, and the courage to keep going even when "
+        "the path is unclear. For me, being a scientist is not only about knowledge, it is about asking "
+        "meaningful questions, embracing uncertainty, and continuously evolving.\n\n"
+        "This space is where I document my journey, my ideas, projects, experiments, and reflections. It "
+        "represents not only what I have done so far, but also the direction I am heading toward.\n\n"
+        "Because I believe that even the smallest steps, when taken with intention, can lead to significant impact."
     ),
+}
+
+THEMES = {
+    "Midnight Blue": {
+        "bg_start": "#071124",
+        "bg_mid": "#0a1632",
+        "bg_end": "#0d1b3b",
+        "glow_one": "rgba(88, 129, 255, 0.22)",
+        "glow_two": "rgba(53, 92, 212, 0.28)",
+        "text": "#f7faff",
+        "muted": "#d7e3ff",
+        "accent": "#9fc0ff",
+        "card": "rgba(10, 18, 44, 0.84)",
+        "line": "rgba(182, 202, 255, 0.12)",
+        "button": "#5f8cff",
+        "button_text": "#f8fbff",
+    },
+    "Emerald Night": {
+        "bg_start": "#071a18",
+        "bg_mid": "#0a2420",
+        "bg_end": "#102f29",
+        "glow_one": "rgba(80, 210, 166, 0.20)",
+        "glow_two": "rgba(26, 138, 122, 0.25)",
+        "text": "#f2fffb",
+        "muted": "#cce8df",
+        "accent": "#87efd0",
+        "card": "rgba(8, 29, 25, 0.84)",
+        "line": "rgba(162, 233, 209, 0.12)",
+        "button": "#2db592",
+        "button_text": "#f6fffc",
+    },
+    "Royal Plum": {
+        "bg_start": "#14091f",
+        "bg_mid": "#221036",
+        "bg_end": "#2d1646",
+        "glow_one": "rgba(178, 124, 255, 0.18)",
+        "glow_two": "rgba(106, 67, 197, 0.26)",
+        "text": "#fbf8ff",
+        "muted": "#e2d8ff",
+        "accent": "#c7aaff",
+        "card": "rgba(27, 14, 45, 0.84)",
+        "line": "rgba(215, 197, 255, 0.12)",
+        "button": "#8d63ff",
+        "button_text": "#fbf9ff",
+    },
 }
 
 PROJECTS = [
@@ -200,46 +253,35 @@ PUBLICATIONS = [
         "title": "TWEETING TROUBLE: CLIMATE CHANGE. ARE WE SILENCING OUR BIRDS?",
         "publisher": "Young Reporters For The Environment",
         "date": "May 31, 2023",
-        "description": "Show publication",
+        "description": "🌍 International environmental journalism and science communication work.",
     },
     {
         "title": "To What Extent Soil Type Affects CO2 Concentration, Temperature and pH",
         "publisher": "Robert College Science Symposium",
         "date": "Jun 10, 2022",
         "description": (
-            "Due to global climate change and the demands of a growing population, land use "
-            "and ecosystem sustainability have become increasingly important. This study "
-            "used mesocosms, small artificial ecosystems where variables can be manipulated, "
-            "to observe changes in CO2 concentration, pH, and temperature across two soil "
-            "types: regular potting soil and succulent soil. Although differences were "
-            "observed in CO2 concentration and pH, air and water temperatures remained "
-            "similar in both mesocosms."
+            "🧪 A mesocosm-based study exploring how soil type affects CO2 concentration, pH, "
+            "and temperature, emphasizing ecosystem sustainability and experimental comparison."
         ),
     },
 ]
 
 COURSES = [
-    "Bogazici University - Physics, Biology, Medicine, Machine Learning",
-    "Duke University - Introduction to Chemistry: Reactions and Ratios",
-    "EGG (Early Entrepreneur Development) Program",
-    "GWC-Morgan Stanley JavaScript-p5.js",
-    "Girls Who Code - Introduction to Data",
-    "Sabanci University - Astrophysics and Exoplanets",
-    "Sabanci University - Quantum Physics",
-    "The School of The New York Times Summer Camp - Photojournalism As Art",
-    "YetGen",
+    "📘 Bogazici University - Physics, Biology, Medicine, Machine Learning",
+    "⚗️ Duke University - Introduction to Chemistry: Reactions and Ratios",
+    "🚀 EGG (Early Entrepreneur Development) Program",
+    "💻 GWC-Morgan Stanley JavaScript-p5.js",
+    "📊 Girls Who Code - Introduction to Data",
+    "🌌 Sabanci University - Astrophysics and Exoplanets",
+    "⚛️ Sabanci University - Quantum Physics",
+    "📷 The School of The New York Times Summer Camp - Photojournalism As Art",
+    "🌱 YetGen",
 ]
 
 PLATFORMS = [
     ("GitHub", "https://github.com/aybikeyesm"),
     ("LinkedIn", "https://www.linkedin.com/in/aybikeyesimeskibozkurt"),
     ("Email", "mailto:aybikeeskibozkurt@gmail.com"),
-]
-
-VISION_POINTS = [
-    "To build bridges between scientific research and practical healthcare applications.",
-    "To develop biomaterial-based systems that can contribute to regenerative medicine.",
-    "To keep combining research, communication, and technology in ways that create real social value.",
 ]
 
 SKILLS = [
@@ -262,71 +304,81 @@ LANGUAGES = [
 TEXT = {
     "en": {
         "hero_badge": "Personal Website",
-        "about": "About Me",
-        "about_copy": "A closer look at my academic focus, research direction, and motivation.",
-        "projects": "Projects",
+        "theme_label": "Theme",
+        "about": "🫶 About Me",
+        "about_copy": "A closer look at my academic focus, resilience, and research motivation.",
+        "projects": "💡 Projects",
         "projects_copy": "Selected project directions that reflect my interests in technology and impact.",
-        "experience": "Experience",
+        "experience": "🚀 Experience",
         "experience_copy": "Programs, writing, teaching, translation, and creative work that shaped my professional growth.",
-        "education": "Education",
+        "education": "🎓 Education",
         "education_copy": "My academic background and student community involvement.",
-        "publications": "Publications",
+        "publications": "📝 Publications",
         "publications_copy": "Writing and research outputs that reflect my academic interests.",
-        "courses": "Courses",
+        "courses": "📚 Courses",
         "courses_copy": "Additional learning experiences that expanded my interdisciplinary perspective.",
-        "platforms": "Other Platforms",
+        "platforms": "🌐 Other Platforms",
         "platforms_copy": "Places where my work, writing, and professional profile can be found.",
-        "vision": "Vision",
-        "vision_copy": "The direction I want my work to take in science, health, and innovation.",
-        "skills": "Skills",
+        "skills": "🧠 Skills",
         "skills_copy": "A selection of technical, academic, and creative skills.",
-        "languages": "Languages",
+        "languages": "🗣️ Languages",
         "languages_copy": "Languages I use in academic, professional, and daily communication.",
-        "volunteer": "Volunteering",
+        "volunteer": "🤝 Volunteering",
         "volunteer_copy": "Community work and service experiences that matter to me.",
-        "certificates": "Certificates",
+        "certificates": "🏅 Certificates",
         "certificates_copy": "Selected certificates, participation records, and training credentials.",
-        "contact": "Contact",
+        "contact": "✉️ Contact",
         "contact_copy": "If you would like to collaborate, connect, or discuss research, I would be glad to hear from you.",
         "connect": "Let's connect.",
         "location": "Location",
         "email": "Email",
         "show_credential": "Open credential",
         "lang_label": "Language",
+        "stats_one": "Research Mindset",
+        "stats_one_copy": "Curiosity, evidence, and structured experimentation",
+        "stats_two": "Health Innovation",
+        "stats_two_copy": "Biomaterials, rehabilitation, and practical impact",
+        "stats_three": "Growth Journey",
+        "stats_three_copy": "Resilience, teamwork, and continuous self-development",
     },
     "tr": {
         "hero_badge": "Kisisel Website",
-        "about": "Hakkimda",
-        "about_copy": "Akademik odagim, arastirma yonelimim ve motivasyonuma daha yakindan bir bakis.",
-        "projects": "Projeler",
+        "theme_label": "Tema",
+        "about": "🫶 Hakkimda",
+        "about_copy": "Akademik odagim, dayanikliligim ve arastirma motivasyonuma daha yakindan bir bakis.",
+        "projects": "💡 Projeler",
         "projects_copy": "Teknoloji ve etki alanindaki ilgilerimi yansitan proje yonelimleri.",
-        "experience": "Deneyim",
-        "experience_copy": "Gelisimimi sekillendiren programlar, yazilar, egitmenlik ve yaratici deneyimler.",
-        "education": "Egitim",
+        "experience": "🚀 Deneyim",
+        "experience_copy": "Gelisimimi sekillendiren programlar, yazilar, egitmenlik ve yaratıcı deneyimler.",
+        "education": "🎓 Egitim",
         "education_copy": "Akademik gecmisim ve ogrenci topluluklarindaki katkim.",
-        "publications": "Yayinlar",
+        "publications": "📝 Yayinlar",
         "publications_copy": "Akademik ilgilerimi yansitan yazilar ve arastirma ciktilari.",
-        "courses": "Egitimler",
+        "courses": "📚 Egitimler",
         "courses_copy": "Disiplinlerarasi bakisimi genisleten ek ogrenme deneyimleri.",
-        "platforms": "Diger Platformlar",
+        "platforms": "🌐 Diger Platformlar",
         "platforms_copy": "Calismalarimin ve profesyonel profilimin yer aldigi platformlar.",
-        "vision": "Vizyon",
-        "vision_copy": "Bilim, saglik ve inovasyonda calismamin ilerlemesini istedigim yon.",
-        "skills": "Yetenekler",
+        "skills": "🧠 Yetenekler",
         "skills_copy": "Teknik, akademik ve yaratici yeteneklerimden secmeler.",
-        "languages": "Diller",
+        "languages": "🗣️ Diller",
         "languages_copy": "Akademik, profesyonel ve gundelik iletisimde kullandigim diller.",
-        "volunteer": "Gonulluluk",
+        "volunteer": "🤝 Gonulluluk",
         "volunteer_copy": "Benim icin anlamli olan toplumsal katki ve hizmet deneyimleri.",
-        "certificates": "Sertifikalar",
+        "certificates": "🏅 Sertifikalar",
         "certificates_copy": "Secili sertifikalar, katilim belgeleri ve egitim kayitlari.",
-        "contact": "Iletisim",
+        "contact": "✉️ Iletisim",
         "contact_copy": "Birlikte calismak, baglanti kurmak ya da arastirma konusmak istersen memnuniyetle iletisime gecerim.",
         "connect": "Baglanti kuralim.",
         "location": "Konum",
         "email": "E-posta",
         "show_credential": "Belgeyi ac",
         "lang_label": "Dil",
+        "stats_one": "Arastirma Yaklasimi",
+        "stats_one_copy": "Merak, kanit ve planli deneysel dusunce",
+        "stats_two": "Saglik Inovasyonu",
+        "stats_two_copy": "Biyomalzemeler, rehabilitasyon ve gercek etki",
+        "stats_three": "Gelisim Yolculugu",
+        "stats_three_copy": "Dayaniklilik, ekip calismasi ve surekli gelisim",
     },
 }
 
@@ -509,7 +561,7 @@ CERTIFICATES = [
         "logo": "kodluyoruz_logo.jpg",
         "date": "Issued Mar 2026",
         "description": "Credential ID 97481064981018",
-        "link": "",
+        "link": "https://verified.sertifier.com/en/verify/97481064981018/",
     },
     {
         "title": "Intro to Data Science",
@@ -517,7 +569,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Jul 2024",
         "description": "Credential ID 83a79daf-41de-4346-a2d3-459fcda1b7c2",
-        "link": "",
+        "link": "https://hq.girlswhocode.com/verify/83a79daf-41de-4346-a2d3-459fcda1b7c2",
     },
     {
         "title": "Girls Who Code: Basic Neural Nets",
@@ -533,6 +585,7 @@ CERTIFICATES = [
         "logo": "yetgen_logo.jpg",
         "date": "Issued Jan 2024",
         "description": "YetGen",
+        "link": "https://verified.sertifier.com/en/verify/59918622379071/",
     },
     {
         "title": "Girls Who Code: Morgan Stanley Summer Immersion Program",
@@ -540,7 +593,7 @@ CERTIFICATES = [
         "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID 4e2dfdb2-449c-4a46-b3f2-f9b94f7b5262",
-        "link": "",
+        "link": "https://hq.girlswhocode.com/verify/4e2dfdb2-449c-4a46-b3f2-f9b94f7b5262",
     },
     {
         "title": "Girls Who Code: Morgan Stanley p5.js",
@@ -564,7 +617,7 @@ CERTIFICATES = [
         "logo": "habitat_logo.jpg",
         "date": "Issued Sep 2022",
         "description": "Credential ID 74692177895354",
-        "link": "",
+        "link": "https://verified.sertifier.com/tr/verify/74692177895354/?ref=email",
     },
     {
         "title": "YetGen x Habitat Dernegi Kariyerin Icin Ilk Adim",
@@ -580,270 +633,343 @@ CERTIFICATES = [
         "logo": "duke_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Skills: Chemistry",
-        "link": "",
+        "link": "https://www.coursera.org/account/accomplishments/certificate/58RRYGDKRT6H",
     },
     {
         "title": "Photojournalism as Art",
         "issuer": "The School of the New York Times",
         "date": "Issued Aug 2022",
         "description": "Credential ID 56715521 | Skills: Photography",
-        "link": "",
+        "link": "https://www.credential.net/cc6a9946-cf6e-412d-9560-8e4dc678b8de#acc.tJwxy4e3",
     },
 ]
 
 
+def image_exists(path: str) -> bool:
+    return bool(path) and Path(path).exists()
+
+
+with st.sidebar:
+    st.markdown("## Customize")
+    language = st.selectbox(
+        "Language / Dil",
+        ["en", "tr"],
+        format_func=lambda x: "English" if x == "en" else "Turkce",
+    )
+    theme_name = st.selectbox("Theme", list(THEMES.keys()))
+
+
+theme = THEMES[theme_name]
+
+
+def t(key: str) -> str:
+    return TEXT[language][key]
+
+
 def inject_styles() -> None:
     st.markdown(
-        """
+        f"""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700;800&display=swap');
 
-        :root {
-            --text: #e8eefc;
-            --muted: #a9b7d9;
-            --accent: #8db2ff;
-            --card: rgba(10, 18, 44, 0.84);
-            --line: rgba(182, 202, 255, 0.12);
+        :root {{
+            --text: {theme["text"]};
+            --muted: {theme["muted"]};
+            --accent: {theme["accent"]};
+            --card: {theme["card"]};
+            --line: {theme["line"]};
             --shadow: 0 24px 60px rgba(1, 6, 20, 0.35);
-        }
+            --button: {theme["button"]};
+            --button-text: {theme["button_text"]};
+        }}
 
-        .stApp {
+        .stApp {{
             background:
-                radial-gradient(circle at top left, rgba(88, 129, 255, 0.22), transparent 26%),
-                radial-gradient(circle at top right, rgba(53, 92, 212, 0.28), transparent 24%),
-                linear-gradient(180deg, #071124 0%, #0a1632 45%, #0d1b3b 100%);
-        }
+                radial-gradient(circle at top left, {theme["glow_one"]}, transparent 26%),
+                radial-gradient(circle at top right, {theme["glow_two"]}, transparent 24%),
+                linear-gradient(180deg, {theme["bg_start"]} 0%, {theme["bg_mid"]} 45%, {theme["bg_end"]} 100%);
+        }}
 
-        [data-testid="stHeader"] { background: transparent; }
-        .block-container {
+        [data-testid="stHeader"] {{
+            background: transparent;
+        }}
+
+        [data-testid="stSidebar"] {{
+            background: rgba(7, 14, 34, 0.92);
+            border-right: 1px solid rgba(185, 208, 255, 0.10);
+        }}
+
+        [data-testid="stSidebar"] * {{
+            color: #edf4ff !important;
+        }}
+
+        .block-container {{
             padding-top: 1.4rem;
             padding-bottom: 4rem;
             max-width: 1180px;
-        }
+        }}
 
-        html, body, [class*="css"] {
+        html, body, [class*="css"] {{
             font-family: "Manrope", sans-serif;
             color: var(--text);
-        }
+        }}
 
-        h1, h2, h3 {
+        h1, h2, h3 {{
             font-family: "Space Grotesk", sans-serif !important;
             letter-spacing: -0.03em;
-        }
+        }}
 
-        .nav-wrap {
+        .nav-wrap {{
             position: sticky;
             top: 0.6rem;
             z-index: 10;
-            background: rgba(10, 18, 44, 0.78);
-            backdrop-filter: blur(12px);
+            background: rgba(10, 18, 44, 0.72);
+            backdrop-filter: blur(14px);
             border: 1px solid var(--line);
             border-radius: 999px;
             padding: 0.8rem 1.1rem;
             margin-bottom: 1.2rem;
             box-shadow: var(--shadow);
-        }
+            animation: floatIn 0.9s ease;
+        }}
 
-        .nav-wrap a {
-            color: var(--muted);
+        .nav-wrap a {{
+            color: #edf3ff;
             text-decoration: none;
             margin-right: 1rem;
             font-size: 0.92rem;
             font-weight: 700;
-        }
+            transition: color 0.2s ease;
+        }}
 
-        .hero {
+        .nav-wrap a:hover {{
+            color: var(--accent);
+        }}
+
+        .hero {{
             padding: 1.2rem 1.2rem 3rem 1.2rem;
             border-radius: 32px;
             background:
-                linear-gradient(135deg, rgba(13, 24, 58, 0.95), rgba(10, 18, 44, 0.88)),
+                linear-gradient(135deg, rgba(13, 24, 58, 0.94), rgba(10, 18, 44, 0.88)),
                 linear-gradient(120deg, rgba(88,129,255,0.08), rgba(28,57,132,0.10));
-            border: 1px solid rgba(182, 202, 255, 0.10);
+            border: 1px solid var(--line);
             box-shadow: var(--shadow);
-        }
+            animation: fadeUp 0.9s ease;
+        }}
 
-        .hero-banner {
+        .hero-banner {{
             overflow: hidden;
             border-radius: 26px;
             margin-bottom: 1.4rem;
             border: 1px solid rgba(141, 178, 255, 0.18);
             box-shadow: var(--shadow);
-        }
+            animation: reveal 1.2s ease;
+        }}
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 170px 1fr;
-            gap: 1.4rem;
-            align-items: center;
-        }
-
-        .avatar-shell {
-            width: 170px;
-            height: 170px;
-            border-radius: 28px;
-            background: linear-gradient(135deg, rgba(88,129,255,0.24), rgba(34,67,160,0.22));
-            border: 1px solid var(--line);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .avatar-shell img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .avatar-fallback {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        .eyebrow {
+        .eyebrow {{
             display: inline-block;
             padding: 0.45rem 0.85rem;
             border-radius: 999px;
-            background: rgba(175, 90, 60, 0.10);
-            color: #b8ceff;
+            background: rgba(159, 192, 255, 0.10);
+            color: var(--accent);
             font-size: 0.86rem;
             font-weight: 800;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-        }
+            animation: pulseSoft 2.8s infinite;
+        }}
 
-        .hero h1 {
+        .hero h1 {{
             font-size: clamp(2.4rem, 7vw, 5rem);
             line-height: 0.95;
             margin: 1rem 0 0.7rem 0;
-        }
+        }}
 
-        .hero p {
+        .hero p {{
             font-size: 1.05rem;
-            color: var(--muted);
+            color: #edf3ff;
             max-width: 760px;
             line-height: 1.8;
-        }
+        }}
 
-        .stat-grid {
+        .stat-grid {{
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 1rem;
             margin-top: 1.8rem;
-        }
+        }}
 
-        .section-card, .project-card, .timeline-card, .stat-card {
+        .section-card, .project-card, .stat-card, .entry-wrap {{
             background: var(--card);
             border: 1px solid var(--line);
             border-radius: 24px;
             box-shadow: var(--shadow);
             backdrop-filter: blur(8px);
+            animation: fadeUp 0.85s ease;
+        }}
+
+        .section-card, .project-card, .stat-card {{
             padding: 1.25rem;
             height: 100%;
-        }
+        }}
 
-        .stat-value {
+        .entry-wrap {{
+            margin-bottom: 1rem;
+            padding: 1.15rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }}
+
+        .entry-wrap:hover, .project-card:hover, .section-card:hover {{
+            transform: translateY(-4px);
+            border-color: rgba(159, 192, 255, 0.26);
+        }}
+
+        .stat-value {{
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.8rem;
             font-weight: 700;
-        }
+        }}
 
-        .stat-label, .small-muted {
+        .stat-label, .small-muted {{
             color: var(--muted);
-        }
+        }}
 
-        .small-muted {
-            font-size: 0.95rem;
+        .small-muted {{
+            font-size: 0.94rem;
             line-height: 1.75;
-        }
+        }}
 
-        .section-title {
+        .section-title {{
             font-size: 2rem;
             margin: 0 0 0.4rem 0;
-        }
+        }}
 
-        .section-copy {
-            color: var(--muted);
+        .section-copy {{
+            color: #dfe9ff;
             line-height: 1.8;
             margin-bottom: 1rem;
-        }
+        }}
 
-        .project-title {
+        .project-title {{
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.02rem;
             margin-bottom: 0.35rem;
-        }
+            color: #f7fbff !important;
+        }}
 
-        .chip {
+        .chip {{
             display: inline-block;
             padding: 0.42rem 0.7rem;
             margin: 0.25rem 0.35rem 0 0;
             border-radius: 999px;
-            background: rgba(27, 26, 23, 0.05);
-            border: 1px solid rgba(27, 26, 23, 0.08);
+            background: rgba(159, 192, 255, 0.08);
+            border: 1px solid rgba(159, 192, 255, 0.12);
             color: var(--text);
             font-size: 0.88rem;
             font-weight: 700;
-        }
+            transition: transform 0.2s ease;
+        }}
 
-        .platform-link {
+        .chip:hover {{
+            transform: scale(1.03);
+        }}
+
+        .platform-link {{
             display: block;
             padding: 0.95rem 1rem;
             border-radius: 18px;
             background: rgba(18, 29, 68, 0.72);
             border: 1px solid var(--line);
             text-decoration: none;
-            color: var(--text) !important;
+            color: #f7faff !important;
             font-weight: 700;
-            margin-bottom: 0.8rem;
-        }
+            margin-top: 0.7rem;
+            transition: all 0.2s ease;
+        }}
 
-        .entry-wrap {
-            margin-bottom: 1rem;
-            padding: 1.15rem;
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 24px;
-            box-shadow: var(--shadow);
-        }
+        .platform-link:hover {{
+            transform: translateY(-2px);
+            border-color: rgba(159, 192, 255, 0.28);
+        }}
 
-        .logo-box {
-            padding: 0;
-        }
+        .entry-logo img {{
+            max-width: 58px !important;
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+        }}
 
-        ul.clean-list {
+        ul.clean-list {{
             padding-left: 1.1rem;
             margin: 0.4rem 0 0 0;
-        }
+        }}
 
-        ul.clean-list li {
+        ul.clean-list li {{
             margin-bottom: 0.45rem;
             color: var(--muted);
             line-height: 1.6;
-        }
+        }}
 
-        .footer-box {
+        .footer-box {{
             margin-top: 1.3rem;
             padding: 1.5rem;
             border-radius: 26px;
             background: linear-gradient(135deg, rgba(88,129,255,0.14), rgba(33,58,130,0.18));
             border: 1px solid var(--line);
-        }
+            box-shadow: var(--shadow);
+            animation: fadeUp 0.9s ease;
+        }}
 
-        @media (max-width: 900px) {
-            .stat-grid {
+        @keyframes fadeUp {{
+            from {{
+                opacity: 0;
+                transform: translateY(18px);
+            }}
+            to {{
+                opacity: 1;
+                transform: translateY(0);
+            }}
+        }}
+
+        @keyframes reveal {{
+            from {{
+                opacity: 0;
+                transform: scale(0.98);
+            }}
+            to {{
+                opacity: 1;
+                transform: scale(1);
+            }}
+        }}
+
+        @keyframes floatIn {{
+            from {{
+                opacity: 0;
+                transform: translateY(-10px);
+            }}
+            to {{
+                opacity: 1;
+                transform: translateY(0);
+            }}
+        }}
+
+        @keyframes pulseSoft {{
+            0% {{
+                transform: scale(1);
+            }}
+            50% {{
+                transform: scale(1.03);
+            }}
+            100% {{
+                transform: scale(1);
+            }}
+        }}
+
+        @media (max-width: 900px) {{
+            .stat-grid {{
                 grid-template-columns: 1fr;
-            }
-            .hero-grid {
-                grid-template-columns: 1fr;
-            }
-            .avatar-shell {
-                width: 140px;
-                height: 140px;
-            }
-        }
+            }}
+        }}
         </style>
         """,
         unsafe_allow_html=True,
@@ -860,17 +986,6 @@ def render_bullet_list(items: list[str]) -> str:
     return "<ul class='clean-list'>" + "".join(f"<li>{item}</li>" for item in items) + "</ul>"
 
 
-def image_exists(path: str) -> bool:
-    return bool(path) and Path(path).exists()
-
-
-language = st.sidebar.selectbox("Language / Dil", ["en", "tr"], format_func=lambda x: "English" if x == "en" else "Turkce")
-
-
-def t(key: str) -> str:
-    return TEXT[language][key]
-
-
 def render_logo_card(
     title: str,
     subtitle: str,
@@ -881,10 +996,12 @@ def render_logo_card(
     link_label: str = "",
 ) -> None:
     st.markdown("<div class='entry-wrap'>", unsafe_allow_html=True)
-    left, right = st.columns([0.16, 0.84], vertical_alignment="top")
+    left, right = st.columns([0.10, 0.90], vertical_alignment="top")
     with left:
         if image_exists(logo):
+            st.markdown("<div class='entry-logo'>", unsafe_allow_html=True)
             st.image(logo, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
     with right:
         st.markdown(f"<div class='project-title'>{title}</div>", unsafe_allow_html=True)
         st.markdown(f"<p class='small-muted'>{subtitle}</p>", unsafe_allow_html=True)
@@ -911,20 +1028,13 @@ st.markdown(
         <a href="#publications">Publications</a>
         <a href="#courses">Courses</a>
         <a href="#platforms">Platforms</a>
-        <a href="#vision">Vision</a>
-        <a href="#skills">{skills}</a>
-        <a href="#languages">{languages}</a>
-        <a href="#volunteer">{volunteer}</a>
-        <a href="#certificates">{certificates}</a>
-        <a href="#contact">{contact}</a>
+        <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
     </div>
-    """.format(
-        skills=t("skills"),
-        languages=t("languages"),
-        volunteer=t("volunteer"),
-        certificates=t("certificates"),
-        contact=t("contact"),
-    ),
+    """,
     unsafe_allow_html=True,
 )
 
@@ -934,6 +1044,7 @@ if image_exists(PROFILE["banner"]):
     st.markdown("<div class='hero-banner'>", unsafe_allow_html=True)
     st.image(PROFILE["banner"], use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
+
 hero_left, hero_right = st.columns([0.28, 0.72], vertical_alignment="center")
 with hero_left:
     if image_exists(PROFILE["photo"]):
@@ -959,19 +1070,19 @@ with hero_right:
     )
 
 st.markdown(
-    """
+    f"""
     <div class="stat-grid">
         <div class="stat-card">
-            <div class="stat-value">Biomaterials</div>
-            <div class="stat-label">Focused on regenerative and bioresponsive systems</div>
+            <div class="stat-value">{t("stats_one")}</div>
+            <div class="stat-label">{t("stats_one_copy")}</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">Science + Code</div>
-            <div class="stat-label">Blending research, communication, and digital tools</div>
+            <div class="stat-value">{t("stats_two")}</div>
+            <div class="stat-label">{t("stats_two_copy")}</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">Global Outlook</div>
-            <div class="stat-label">International projects, academic events, and interdisciplinary growth</div>
+            <div class="stat-value">{t("stats_three")}</div>
+            <div class="stat-label">{t("stats_three_copy")}</div>
         </div>
     </div>
     </section>
@@ -1070,27 +1181,13 @@ with platform_right:
         """
         <div class="section-card">
             <p class="small-muted">
-                These platforms connect my scientific interests, writing practice, coding work,
+                🌟 These platforms connect my scientific interests, writing practice, coding work,
                 and professional development in one visible digital identity.
             </p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-
-st.write("")
-section_header("vision", t("vision"), t("vision_copy"))
-vision_cols = st.columns(3)
-for col, item in zip(vision_cols, VISION_POINTS):
-    with col:
-        st.markdown(
-            f"""
-            <div class="section-card">
-                <p class="small-muted">{item}</p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
 
 st.write("")
 section_header("skills", t("skills"), t("skills_copy"))

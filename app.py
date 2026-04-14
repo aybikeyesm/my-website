@@ -13,9 +13,7 @@ st.set_page_config(
 PROFILE = {
     "name": "Aybike Yesim Eskibozkurt",
     "title": "Physiotherapy Student | Researcher | Coder",
-    "tagline": (
-        "Exploring the intersection of health sciences, biomaterials, research, and innovation."
-    ),
+    "tagline": "Exploring the intersection of health sciences, biomaterials, research, and innovation.",
     "location": "Istanbul, Turkey",
     "email": "aybikeeskibozkurt@gmail.com",
     "photo": "profile.jpg",
@@ -52,65 +50,61 @@ PROFILE = {
 }
 
 THEMES = {
-    "Midnight Blue": {
+    "Dark": {
         "bg_start": "#071124",
         "bg_mid": "#0a1632",
         "bg_end": "#0d1b3b",
         "glow_one": "rgba(88, 129, 255, 0.22)",
         "glow_two": "rgba(53, 92, 212, 0.28)",
-        "text": "#f7faff",
-        "muted": "#d7e3ff",
+        "text": "#f8fbff",
+        "muted": "#edf3ff",
         "accent": "#9fc0ff",
-        "card": "rgba(10, 18, 44, 0.84)",
-        "line": "rgba(182, 202, 255, 0.12)",
-        "button": "#5f8cff",
+        "card": "rgba(10, 18, 44, 0.88)",
+        "line": "rgba(182, 202, 255, 0.14)",
+        "sidebar": "rgba(7, 14, 34, 0.94)",
+        "nav": "rgba(10, 18, 44, 0.78)",
+        "hero_text": "#f6f9ff",
+        "section_copy": "#f0f5ff",
+        "platform_bg": "rgba(18, 29, 68, 0.80)",
+        "footer_bg": "linear-gradient(135deg, rgba(88,129,255,0.16), rgba(33,58,130,0.22))",
+        "chip_bg": "rgba(159, 192, 255, 0.10)",
+        "chip_border": "rgba(159, 192, 255, 0.14)",
+        "button": "#6f98ff",
         "button_text": "#f8fbff",
     },
-    "Emerald Night": {
-        "bg_start": "#071a18",
-        "bg_mid": "#0a2420",
-        "bg_end": "#102f29",
-        "glow_one": "rgba(80, 210, 166, 0.20)",
-        "glow_two": "rgba(26, 138, 122, 0.25)",
-        "text": "#f2fffb",
-        "muted": "#cce8df",
-        "accent": "#87efd0",
-        "card": "rgba(8, 29, 25, 0.84)",
-        "line": "rgba(162, 233, 209, 0.12)",
-        "button": "#2db592",
-        "button_text": "#f6fffc",
-    },
-    "Royal Plum": {
-        "bg_start": "#14091f",
-        "bg_mid": "#221036",
-        "bg_end": "#2d1646",
-        "glow_one": "rgba(178, 124, 255, 0.18)",
-        "glow_two": "rgba(106, 67, 197, 0.26)",
-        "text": "#fbf8ff",
-        "muted": "#e2d8ff",
-        "accent": "#c7aaff",
-        "card": "rgba(27, 14, 45, 0.84)",
-        "line": "rgba(215, 197, 255, 0.12)",
-        "button": "#8d63ff",
-        "button_text": "#fbf9ff",
+    "Light": {
+        "bg_start": "#f7f8fc",
+        "bg_mid": "#eef2fb",
+        "bg_end": "#e6ebf8",
+        "glow_one": "rgba(80, 124, 255, 0.10)",
+        "glow_two": "rgba(37, 86, 212, 0.10)",
+        "text": "#162033",
+        "muted": "#2f3d57",
+        "accent": "#315fdd",
+        "card": "rgba(255, 255, 255, 0.90)",
+        "line": "rgba(49, 95, 221, 0.10)",
+        "sidebar": "rgba(241, 245, 255, 0.95)",
+        "nav": "rgba(255, 255, 255, 0.86)",
+        "hero_text": "#22314e",
+        "section_copy": "#2b3953",
+        "platform_bg": "rgba(255, 255, 255, 0.92)",
+        "footer_bg": "linear-gradient(135deg, rgba(84,125,236,0.10), rgba(154,184,255,0.16))",
+        "chip_bg": "rgba(49, 95, 221, 0.08)",
+        "chip_border": "rgba(49, 95, 221, 0.12)",
+        "button": "#315fdd",
+        "button_text": "#f8fbff",
     },
 }
 
 PROJECTS = [
     {
         "name": "AI Study Companion",
-        "summary": (
-            "A smart learning assistant concept designed to help students summarize notes, "
-            "generate quizzes, and stay motivated throughout their study journey."
-        ),
+        "summary": "A smart learning assistant concept designed to help students summarize notes, generate quizzes, and stay motivated throughout their study journey.",
         "stack": "Python, Streamlit, OpenAI API",
     },
     {
         "name": "Sustainability Tracker",
-        "summary": (
-            "An interactive dashboard concept for visualizing habits, environmental impact, "
-            "and long-term progress in sustainable living."
-        ),
+        "summary": "An interactive dashboard concept for visualizing habits, environmental impact, and long-term progress in sustainable living.",
         "stack": "Python, Pandas, Plotly",
     },
 ]
@@ -259,10 +253,7 @@ PUBLICATIONS = [
         "title": "To What Extent Soil Type Affects CO2 Concentration, Temperature and pH",
         "publisher": "Robert College Science Symposium",
         "date": "Jun 10, 2022",
-        "description": (
-            "🧪 A mesocosm-based study exploring how soil type affects CO2 concentration, pH, "
-            "and temperature, emphasizing ecosystem sustainability and experimental comparison."
-        ),
+        "description": "🧪 A mesocosm-based study exploring how soil type affects CO2 concentration, pH, and temperature, emphasizing ecosystem sustainability and experimental comparison.",
     },
 ]
 
@@ -304,7 +295,6 @@ LANGUAGES = [
 TEXT = {
     "en": {
         "hero_badge": "Personal Website",
-        "theme_label": "Theme",
         "about": "🫶 About Me",
         "about_copy": "A closer look at my academic focus, resilience, and research motivation.",
         "projects": "💡 Projects",
@@ -333,7 +323,6 @@ TEXT = {
         "location": "Location",
         "email": "Email",
         "show_credential": "Open credential",
-        "lang_label": "Language",
         "stats_one": "Research Mindset",
         "stats_one_copy": "Curiosity, evidence, and structured experimentation",
         "stats_two": "Health Innovation",
@@ -343,7 +332,6 @@ TEXT = {
     },
     "tr": {
         "hero_badge": "Kisisel Website",
-        "theme_label": "Tema",
         "about": "🫶 Hakkimda",
         "about_copy": "Akademik odagim, dayanikliligim ve arastirma motivasyonuma daha yakindan bir bakis.",
         "projects": "💡 Projeler",
@@ -372,7 +360,6 @@ TEXT = {
         "location": "Konum",
         "email": "E-posta",
         "show_credential": "Belgeyi ac",
-        "lang_label": "Dil",
         "stats_one": "Arastirma Yaklasimi",
         "stats_one_copy": "Merak, kanit ve planli deneysel dusunce",
         "stats_two": "Saglik Inovasyonu",
@@ -388,24 +375,14 @@ VOLUNTEER = [
         "org": "Coursera",
         "logo": "coursera_logo.jpg",
         "meta": "Aug 2022 - Present | Education",
-        "description": (
-            "Contributed to the translation and localization of course materials to improve "
-            "global accessibility for learners. Assisted in translating and editing "
-            "educational content between Turkish and English, ensuring clarity, accuracy, "
-            "and consistency. Gained experience in academic terminology, digital "
-            "collaboration, and community-driven knowledge sharing."
-        ),
+        "description": "Contributed to the translation and localization of course materials to improve global accessibility for learners. Assisted in translating and editing educational content between Turkish and English, ensuring clarity, accuracy, and consistency. Gained experience in academic terminology, digital collaboration, and community-driven knowledge sharing.",
     },
     {
         "role": "Yarini Kodlayanlar Project Volunteer Trainer",
         "org": "Habitat Dernegi",
         "logo": "habitat_logo.jpg",
         "meta": "Sep 2022 - 2024",
-        "description": (
-            "Contributed to digital inclusion by providing coding education to children "
-            "through Scratch-based workshops. Supported equal access to technology and "
-            "inspired young learners to explore creativity and problem-solving through coding."
-        ),
+        "description": "Contributed to digital inclusion by providing coding education to children through Scratch-based workshops. Supported equal access to technology and inspired young learners to explore creativity and problem-solving through coding.",
     },
     {
         "role": "Blogger",
@@ -419,76 +396,49 @@ VOLUNTEER = [
         "org": "Beth Israel Deaconess Medical Center",
         "logo": "beth_israel_logo.jpg",
         "meta": "Dec 2021 - Jan 2022 | Health",
-        "description": (
-            "Designed and distributed handmade postcards for long-term hospital patients "
-            "to offer emotional support and encouragement. The project reached dozens of "
-            "patients, bringing moments of joy and connection during treatment while "
-            "strengthening empathy-driven communication."
-        ),
+        "description": "Designed and distributed handmade postcards for long-term hospital patients to offer emotional support and encouragement. The project reached dozens of patients, bringing moments of joy and connection during treatment while strengthening empathy-driven communication.",
     },
     {
         "role": "Event Volunteer",
         "org": "International Baccalaureate",
         "logo": "ib_logo.jpg",
         "meta": "Dec 2023 | Education",
-        "description": (
-            "Supported participant guidance, booth assistance, and event organization during "
-            "the International Baccalaureate Day event. Strengthened communication, teamwork, "
-            "and event coordination skills."
-        ),
+        "description": "Supported participant guidance, booth assistance, and event organization during the International Baccalaureate Day event. Strengthened communication, teamwork, and event coordination skills.",
     },
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
         "logo": "biotech_logo.jpg",
         "meta": "Nov 2025 | Science and Technology",
-        "description": (
-            "Supported participant guidance during the Sci4Future event and contributed to "
-            "the seamless execution of the program while gaining access to biotechnology-focused "
-            "academic presentations and industry representatives."
-        ),
+        "description": "Supported participant guidance during the Sci4Future event and contributed to the seamless execution of the program while gaining access to biotechnology-focused academic presentations and industry representatives.",
     },
     {
         "role": "Volunteer Music Performer - Community Outreach Program",
         "org": "Kadikoy Belediyesi",
         "logo": "kadikoy_logo.jpg",
         "meta": "Jun 2019 | Veteran Support",
-        "description": (
-            "Performed flute pieces for Darulaceze Elderly Care Institution as part of "
-            "community outreach activities. Engaged with elderly individuals and helped create "
-            "a warm, uplifting social environment."
-        ),
+        "description": "Performed flute pieces for Darulaceze Elderly Care Institution as part of community outreach activities. Engaged with elderly individuals and helped create a warm, uplifting social environment.",
     },
     {
         "role": "Kadikoy Municipality Children's Art Center Flutist",
         "org": "Kadikoy Belediyesi",
         "logo": "kadikoy_logo.jpg",
         "meta": "Sep 2016 - Jun 2021 | Arts and Culture",
-        "description": (
-            "Performed as a volunteer flutist in the center's youth orchestra, supporting "
-            "musical events, rehearsals, and cultural programs aimed at fostering artistic engagement."
-        ),
+        "description": "Performed as a volunteer flutist in the center's youth orchestra, supporting musical events, rehearsals, and cultural programs aimed at fostering artistic engagement.",
     },
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
         "logo": "biotech_logo.jpg",
         "meta": "Dec 2025 | Forensic Sciences",
-        "description": (
-            "Served as a volunteer at the 6th Forensic Sciences Congress, supporting session "
-            "organization, participant coordination, and on-site logistics."
-        ),
+        "description": "Served as a volunteer at the 6th Forensic Sciences Congress, supporting session organization, participant coordination, and on-site logistics.",
     },
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
         "logo": "yeditepe_logo.jpg",
         "meta": "Dec 2025 | Health",
-        "description": (
-            "Served as a speaker helper during the Sports Health Congress, supporting "
-            "communication and coordination between speakers and the organizing team while "
-            "gaining practical exposure to physiotherapy-related topics."
-        ),
+        "description": "Served as a speaker helper during the Sports Health Congress, supporting communication and coordination between speakers and the organizing team while gaining practical exposure to physiotherapy-related topics.",
     },
 ]
 
@@ -529,31 +479,21 @@ CERTIFICATES = [
         "issuer": "Yeditepe Universitesi Saglik Kulubu Sanitas",
         "logo": "sanitas_logo.jpg",
         "date": "Issued Dec 2025",
-        "description": (
-            "Supported the organization of the Sports Health Symposium as part of the "
-            "conference staff team and assisted with session logistics, participant "
-            "coordination, and speaker support."
-        ),
+        "description": "Supported the organization of the Sports Health Symposium as part of the conference staff team and assisted with session logistics, participant coordination, and speaker support.",
     },
     {
         "title": "3rd SCI4Future Industry Summit",
         "issuer": "Yeditepe University Biotechnology Society",
         "logo": "biotech_logo.jpg",
         "date": "Issued Nov 2025",
-        "description": (
-            "Supported the organization of the Sci4Future Summit as a conference staff member "
-            "and gained experience in scientific event organization."
-        ),
+        "description": "Supported the organization of the Sci4Future Summit as a conference staff member and gained experience in scientific event organization.",
     },
     {
         "title": "6th Forensic Sciences Congress",
         "issuer": "Yeditepe University Biotechnology Society",
         "logo": "biotech_logo.jpg",
         "date": "Issued Dec 2025",
-        "description": (
-            "Volunteered as conference staff, supported session coordination, participant "
-            "guidance, and on-site event logistics."
-        ),
+        "description": "Volunteered as conference staff, supported session coordination, participant guidance, and on-site event logistics.",
     },
     {
         "title": "AI4Change Program 6th Term Participation Certificate",
@@ -656,7 +596,7 @@ with st.sidebar:
         ["en", "tr"],
         format_func=lambda x: "English" if x == "en" else "Turkce",
     )
-    theme_name = st.selectbox("Theme", list(THEMES.keys()))
+    theme_name = st.selectbox("Theme", ["Dark", "Light"])
 
 
 theme = THEMES[theme_name]
@@ -695,12 +635,12 @@ def inject_styles() -> None:
         }}
 
         [data-testid="stSidebar"] {{
-            background: rgba(7, 14, 34, 0.92);
-            border-right: 1px solid rgba(185, 208, 255, 0.10);
+            background: {theme["sidebar"]};
+            border-right: 1px solid {theme["line"]};
         }}
 
         [data-testid="stSidebar"] * {{
-            color: #edf4ff !important;
+            color: {"#edf4ff" if theme_name == "Dark" else "#22314e"} !important;
         }}
 
         .block-container {{
@@ -723,7 +663,7 @@ def inject_styles() -> None:
             position: sticky;
             top: 0.6rem;
             z-index: 10;
-            background: rgba(10, 18, 44, 0.72);
+            background: {theme["nav"]};
             backdrop-filter: blur(14px);
             border: 1px solid var(--line);
             border-radius: 999px;
@@ -734,7 +674,7 @@ def inject_styles() -> None:
         }}
 
         .nav-wrap a {{
-            color: #edf3ff;
+            color: var(--text);
             text-decoration: none;
             margin-right: 1rem;
             font-size: 0.92rem;
@@ -749,9 +689,7 @@ def inject_styles() -> None:
         .hero {{
             padding: 1.2rem 1.2rem 3rem 1.2rem;
             border-radius: 32px;
-            background:
-                linear-gradient(135deg, rgba(13, 24, 58, 0.94), rgba(10, 18, 44, 0.88)),
-                linear-gradient(120deg, rgba(88,129,255,0.08), rgba(28,57,132,0.10));
+            background: var(--card);
             border: 1px solid var(--line);
             box-shadow: var(--shadow);
             animation: fadeUp 0.9s ease;
@@ -761,7 +699,7 @@ def inject_styles() -> None:
             overflow: hidden;
             border-radius: 26px;
             margin-bottom: 1.4rem;
-            border: 1px solid rgba(141, 178, 255, 0.18);
+            border: 1px solid var(--line);
             box-shadow: var(--shadow);
             animation: reveal 1.2s ease;
         }}
@@ -770,7 +708,7 @@ def inject_styles() -> None:
             display: inline-block;
             padding: 0.45rem 0.85rem;
             border-radius: 999px;
-            background: rgba(159, 192, 255, 0.10);
+            background: var(--chip_bg, rgba(159, 192, 255, 0.10));
             color: var(--accent);
             font-size: 0.86rem;
             font-weight: 800;
@@ -783,11 +721,12 @@ def inject_styles() -> None:
             font-size: clamp(2.4rem, 7vw, 5rem);
             line-height: 0.95;
             margin: 1rem 0 0.7rem 0;
+            color: var(--text);
         }}
 
         .hero p {{
             font-size: 1.05rem;
-            color: #edf3ff;
+            color: {theme["hero_text"]};
             max-width: 760px;
             line-height: 1.8;
         }}
@@ -821,13 +760,14 @@ def inject_styles() -> None:
 
         .entry-wrap:hover, .project-card:hover, .section-card:hover {{
             transform: translateY(-4px);
-            border-color: rgba(159, 192, 255, 0.26);
+            border-color: var(--accent);
         }}
 
         .stat-value {{
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.8rem;
             font-weight: 700;
+            color: var(--text);
         }}
 
         .stat-label, .small-muted {{
@@ -835,26 +775,38 @@ def inject_styles() -> None:
         }}
 
         .small-muted {{
-            font-size: 0.94rem;
-            line-height: 1.75;
+            font-size: 0.99rem;
+            line-height: 1.66;
+        }}
+
+        .about-text {{
+            font-size: 1rem;
+            line-height: 1.43;
+            color: var(--text);
         }}
 
         .section-title {{
             font-size: 2rem;
             margin: 0 0 0.4rem 0;
+            color: var(--text);
         }}
 
         .section-copy {{
-            color: #dfe9ff;
-            line-height: 1.8;
+            color: {theme["section_copy"]};
+            line-height: 1.6;
             margin-bottom: 1rem;
+            font-size: 1rem;
         }}
 
         .project-title {{
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.02rem;
             margin-bottom: 0.35rem;
-            color: #f7fbff !important;
+            color: var(--text) !important;
+        }}
+
+        .entry-wrap strong {{
+            color: var(--text);
         }}
 
         .chip {{
@@ -862,8 +814,8 @@ def inject_styles() -> None:
             padding: 0.42rem 0.7rem;
             margin: 0.25rem 0.35rem 0 0;
             border-radius: 999px;
-            background: rgba(159, 192, 255, 0.08);
-            border: 1px solid rgba(159, 192, 255, 0.12);
+            background: {theme["chip_bg"]};
+            border: 1px solid {theme["chip_border"]};
             color: var(--text);
             font-size: 0.88rem;
             font-weight: 700;
@@ -878,10 +830,10 @@ def inject_styles() -> None:
             display: block;
             padding: 0.95rem 1rem;
             border-radius: 18px;
-            background: rgba(18, 29, 68, 0.72);
+            background: {theme["platform_bg"]};
             border: 1px solid var(--line);
             text-decoration: none;
-            color: #f7faff !important;
+            color: var(--text) !important;
             font-weight: 700;
             margin-top: 0.7rem;
             transition: all 0.2s ease;
@@ -889,7 +841,7 @@ def inject_styles() -> None:
 
         .platform-link:hover {{
             transform: translateY(-2px);
-            border-color: rgba(159, 192, 255, 0.28);
+            border-color: var(--accent);
         }}
 
         .entry-logo img {{
@@ -914,7 +866,7 @@ def inject_styles() -> None:
             margin-top: 1.3rem;
             padding: 1.5rem;
             border-radius: 26px;
-            background: linear-gradient(135deg, rgba(88,129,255,0.14), rgba(33,58,130,0.18));
+            background: {theme["footer_bg"]};
             border: 1px solid var(--line);
             box-shadow: var(--shadow);
             animation: fadeUp 0.9s ease;
@@ -954,15 +906,9 @@ def inject_styles() -> None:
         }}
 
         @keyframes pulseSoft {{
-            0% {{
-                transform: scale(1);
-            }}
-            50% {{
-                transform: scale(1.03);
-            }}
-            100% {{
-                transform: scale(1);
-            }}
+            0% {{ transform: scale(1); }}
+            50% {{ transform: scale(1.03); }}
+            100% {{ transform: scale(1); }}
         }}
 
         @media (max-width: 900px) {{
@@ -1095,7 +1041,7 @@ section_header("about", t("about"), t("about_copy"))
 st.markdown(
     f"""
     <div class="section-card">
-        <p class="small-muted">{PROFILE["bio"].replace(chr(10), "<br><br>")}</p>
+        <p class="about-text">{PROFILE["bio"].replace(chr(10), "<br><br>")}</p>
     </div>
     """,
     unsafe_allow_html=True,

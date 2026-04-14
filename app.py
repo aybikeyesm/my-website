@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import streamlit as st
 
 
@@ -17,8 +19,8 @@ PROFILE = {
     ),
     "location": "Istanbul, Turkey",
     "email": "aybikeeskibozkurt@gmail.com",
-    "photo": "/Users/aybikeeskibozkurt/Desktop/1773172040834-1.jpg",
-    "banner": "/Users/aybikeeskibozkurt/Desktop/1772722679133.jpg",
+    "photo": "profile.jpg",
+    "banner": "banner.jpg",
     "bio": (
         "I am especially focused on biomaterials, and I work on developing bioresponsive "
         "hydrogel systems that aim to mimic the regenerative properties of synovial fluid. "
@@ -54,6 +56,7 @@ EXPERIENCE = [
     {
         "role": "Program Participant - Nestle Youth Academy",
         "org": "Nestle",
+        "logo": "nestle_logo.jpg",
         "meta": "Seasonal | Mar 2026 - Present | Remote",
         "details": [
             "Selected to participate in the Nestle Youth Academy, a program focused on developing young talents through training, mentorship, and real-world insights.",
@@ -66,6 +69,7 @@ EXPERIENCE = [
     {
         "role": "Blogger",
         "org": "Medium",
+        "logo": "medium_logo.jpg",
         "meta": "Seasonal | Sep 2023 - Present | Remote",
         "details": [
             "Published periodical articles on science, education, and personal development.",
@@ -77,6 +81,7 @@ EXPERIENCE = [
     {
         "role": "Freelance Translator",
         "org": "Coursera",
+        "logo": "coursera_logo.jpg",
         "meta": "Part-time | Aug 2022 - Present | Remote",
         "details": [
             "Contributed to the translation and localization of educational course content for a global audience.",
@@ -88,6 +93,7 @@ EXPERIENCE = [
     {
         "role": "Program Participant - Kodluyoruz",
         "org": "Kodluyoruz",
+        "logo": "kodluyoruz_logo.jpg",
         "meta": "Seasonal | Dec 2025 - Feb 2026 | Remote",
         "details": [
             "Selected for the AI4Change Program, focusing on the application of artificial intelligence for social impact.",
@@ -100,6 +106,7 @@ EXPERIENCE = [
     {
         "role": "Trainee",
         "org": "Yetkin Gencler",
+        "logo": "yetgen_logo.jpg",
         "meta": "Full-time | Aug 2023 - Sep 2025 | Hybrid",
         "details": [
             "Developed core competencies such as critical thinking, communication, teamwork, and effective use of office and digital productivity tools through an intensive skills-based training program.",
@@ -109,6 +116,7 @@ EXPERIENCE = [
     {
         "role": "Teaching Assistant - Habitat Association",
         "org": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "meta": "Seasonal | Sep 2022 - 2024 | On-site",
         "details": [
             "Delivered Scratch programming workshops for children, contributing to early coding education and digital literacy development.",
@@ -121,6 +129,7 @@ EXPERIENCE = [
     {
         "role": "Musician",
         "org": "Kadikoy Belediyesi",
+        "logo": "kadikoy_logo.jpg",
         "meta": "Part-time | Sep 2016 - Jun 2021 | On-site",
         "details": [
             "Performed as a volunteer flutist in the municipality's orchestra, participating in rehearsals and public performances.",
@@ -132,6 +141,7 @@ EXPERIENCE = [
     {
         "role": "Flutist - Orchestra Member",
         "org": "Kadikoy Belediyesi Cocuk Sanat Merkezi",
+        "logo": "kadikoy_logo.jpg",
         "meta": "Sep 2016 - Jun 2021 | On-site",
         "details": [
             "Performed as a flutist in the Children's Art Center Orchestra through rehearsals and live performances.",
@@ -146,6 +156,7 @@ EXPERIENCE = [
 EDUCATION = [
     {
         "school": "Yeditepe University",
+        "logo": "yeditepe_logo.jpg",
         "degree": "Bachelor's Degree, Physiotherapy and Rehabilitation",
         "date": "Aug 2025 - Jun 2029",
         "details": [
@@ -160,6 +171,7 @@ EDUCATION = [
     },
     {
         "school": "ISTEK Acibadem Schools",
+        "logo": "istek_logo.jpg",
         "degree": "High School, IB DP Programme (International Baccalaureate)",
         "date": "Sep 2021 - Jun 2024",
         "details": [
@@ -232,10 +244,16 @@ SKILLS = [
     "Python",
 ]
 
+LANGUAGES = [
+    "English - Professional working proficiency",
+    "Turkish - Native or bilingual proficiency",
+]
+
 VOLUNTEER = [
     {
         "role": "Volunteer Translator",
         "org": "Coursera",
+        "logo": "coursera_logo.jpg",
         "meta": "Aug 2022 - Present | Education",
         "description": (
             "Contributed to the translation and localization of course materials to improve "
@@ -248,6 +266,7 @@ VOLUNTEER = [
     {
         "role": "Yarini Kodlayanlar Project Volunteer Trainer",
         "org": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "meta": "Sep 2022 - 2024",
         "description": (
             "Contributed to digital inclusion by providing coding education to children "
@@ -258,12 +277,14 @@ VOLUNTEER = [
     {
         "role": "Blogger",
         "org": "Medium",
+        "logo": "medium_logo.jpg",
         "meta": "Sep 2023 - Present",
         "description": "I write on areas that interest me and publish them for everyone to see.",
     },
     {
         "role": "Local Community Initiative",
         "org": "Beth Israel Deaconess Medical Center",
+        "logo": "beth_israel_logo.jpg",
         "meta": "Dec 2021 - Jan 2022 | Health",
         "description": (
             "Designed and distributed handmade postcards for long-term hospital patients "
@@ -275,6 +296,7 @@ VOLUNTEER = [
     {
         "role": "Event Volunteer",
         "org": "International Baccalaureate",
+        "logo": "ib_logo.jpg",
         "meta": "Dec 2023 | Education",
         "description": (
             "Supported participant guidance, booth assistance, and event organization during "
@@ -285,6 +307,7 @@ VOLUNTEER = [
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
+        "logo": "biotech_logo.jpg",
         "meta": "Nov 2025 | Science and Technology",
         "description": (
             "Supported participant guidance during the Sci4Future event and contributed to "
@@ -295,6 +318,7 @@ VOLUNTEER = [
     {
         "role": "Volunteer Music Performer - Community Outreach Program",
         "org": "Kadikoy Belediyesi",
+        "logo": "kadikoy_logo.jpg",
         "meta": "Jun 2019 | Veteran Support",
         "description": (
             "Performed flute pieces for Darulaceze Elderly Care Institution as part of "
@@ -305,6 +329,7 @@ VOLUNTEER = [
     {
         "role": "Kadikoy Municipality Children's Art Center Flutist",
         "org": "Kadikoy Belediyesi",
+        "logo": "kadikoy_logo.jpg",
         "meta": "Sep 2016 - Jun 2021 | Arts and Culture",
         "description": (
             "Performed as a volunteer flutist in the center's youth orchestra, supporting "
@@ -314,6 +339,7 @@ VOLUNTEER = [
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
+        "logo": "biotech_logo.jpg",
         "meta": "Dec 2025 | Forensic Sciences",
         "description": (
             "Served as a volunteer at the 6th Forensic Sciences Congress, supporting session "
@@ -323,6 +349,7 @@ VOLUNTEER = [
     {
         "role": "Event Volunteer",
         "org": "Yeditepe University",
+        "logo": "yeditepe_logo.jpg",
         "meta": "Dec 2025 | Health",
         "description": (
             "Served as a speaker helper during the Sports Health Congress, supporting "
@@ -336,30 +363,35 @@ CERTIFICATES = [
     {
         "title": "Sabanci University Online Winter School Astrophysics and Extrasolar Planets Quantum Physics",
         "issuer": "Sabanci University",
+        "logo": "",
         "date": "Issued Jan 2021",
         "description": "Sabanci University Online Winter School.",
     },
     {
         "title": "Mobile Photography Training",
         "issuer": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 56729917140952",
     },
     {
         "title": "Women in Technology Online Training",
         "issuer": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 48186649352597",
     },
     {
         "title": "Financial Literacy Training for Individuals",
         "issuer": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Credential ID 08051850904435",
     },
     {
         "title": "3rd Traditional Sports Health Symposium",
         "issuer": "Yeditepe Universitesi Saglik Kulubu Sanitas",
+        "logo": "sanitas_logo.jpg",
         "date": "Issued Dec 2025",
         "description": (
             "Supported the organization of the Sports Health Symposium as part of the "
@@ -370,6 +402,7 @@ CERTIFICATES = [
     {
         "title": "3rd SCI4Future Industry Summit",
         "issuer": "Yeditepe University Biotechnology Society",
+        "logo": "biotech_logo.jpg",
         "date": "Issued Nov 2025",
         "description": (
             "Supported the organization of the Sci4Future Summit as a conference staff member "
@@ -379,6 +412,7 @@ CERTIFICATES = [
     {
         "title": "6th Forensic Sciences Congress",
         "issuer": "Yeditepe University Biotechnology Society",
+        "logo": "biotech_logo.jpg",
         "date": "Issued Dec 2025",
         "description": (
             "Volunteered as conference staff, supported session coordination, participant "
@@ -388,60 +422,70 @@ CERTIFICATES = [
     {
         "title": "AI4Change Program 6th Term Participation Certificate",
         "issuer": "Kodluyoruz",
+        "logo": "kodluyoruz_logo.jpg",
         "date": "Issued Mar 2026",
         "description": "Credential ID 97481064981018",
     },
     {
         "title": "Intro to Data Science",
         "issuer": "Girls Who Code",
+        "logo": "girlswhocode_logo.jpg",
         "date": "Issued Jul 2024",
         "description": "Credential ID 83a79daf-41de-4346-a2d3-459fcda1b7c2",
     },
     {
         "title": "Girls Who Code: Basic Neural Nets",
         "issuer": "Girls Who Code",
+        "logo": "girlswhocode_logo.jpg",
         "date": "Issued Jul 2024",
         "description": "Credential ID 77b0f670-d55e-45f5-a5da-cab92a767b8c",
     },
     {
         "title": "YetGen Trainee",
         "issuer": "Yetkin Gencler",
+        "logo": "yetgen_logo.jpg",
         "date": "Issued Jan 2024",
         "description": "YetGen",
     },
     {
         "title": "Girls Who Code: Morgan Stanley Summer Immersion Program",
         "issuer": "Girls Who Code",
+        "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID 4e2dfdb2-449c-4a46-b3f2-f9b94f7b5262",
     },
     {
         "title": "Girls Who Code: Morgan Stanley p5.js",
         "issuer": "Girls Who Code",
+        "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID e377a882-6f2f-4f54-be33-0a443c4f6481",
     },
     {
         "title": "Girls Who Code: Morgan Stanley Game Design",
         "issuer": "Girls Who Code",
+        "logo": "girlswhocode_logo.jpg",
         "date": "Issued Aug 2023",
         "description": "Credential ID 0d421638-2257-4a71-9188-7c901a28cf40 | Skills: JavaScript",
     },
     {
         "title": "Yarini Kodlayanlar Egitmen Egitimi",
         "issuer": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "date": "Issued Sep 2022",
         "description": "Credential ID 74692177895354",
     },
     {
         "title": "YetGen x Habitat Dernegi Kariyerin Icin Ilk Adim",
         "issuer": "Habitat Dernegi",
+        "logo": "habitat_logo.jpg",
         "date": "Issued Sep 2022",
         "description": "Credential ID 72728422896635",
     },
     {
         "title": "Introduction to Chemistry: Reactions and Ratios",
         "issuer": "Duke University | Coursera",
+        "logo": "duke_logo.jpg",
         "date": "Issued Aug 2022",
         "description": "Skills: Chemistry",
     },
@@ -662,6 +706,22 @@ def inject_styles() -> None:
             margin-bottom: 0.8rem;
         }
 
+        .entry-wrap {
+            margin-bottom: 1rem;
+            padding: 1.15rem;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .logo-box {
+            background: rgba(255,255,255,0.72);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 0.45rem;
+        }
+
         ul.clean-list {
             padding-left: 1.1rem;
             margin: 0.4rem 0 0 0;
@@ -709,6 +769,28 @@ def render_bullet_list(items: list[str]) -> str:
     return "<ul class='clean-list'>" + "".join(f"<li>{item}</li>" for item in items) + "</ul>"
 
 
+def image_exists(path: str) -> bool:
+    return bool(path) and Path(path).exists()
+
+
+def render_logo_card(title: str, subtitle: str, body: str = "", bullets: list[str] | None = None, logo: str = "") -> None:
+    st.markdown("<div class='entry-wrap'>", unsafe_allow_html=True)
+    left, right = st.columns([0.16, 0.84], vertical_alignment="top")
+    with left:
+        if image_exists(logo):
+            st.markdown("<div class='logo-box'>", unsafe_allow_html=True)
+            st.image(logo, use_container_width=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+    with right:
+        st.markdown(f"<div class='project-title'>{title}</div>", unsafe_allow_html=True)
+        st.markdown(f"<p class='small-muted'>{subtitle}</p>", unsafe_allow_html=True)
+        if body:
+            st.markdown(f"<p class='small-muted'>{body}</p>", unsafe_allow_html=True)
+        if bullets:
+            st.markdown(render_bullet_list(bullets), unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+
 inject_styles()
 
 st.markdown(
@@ -724,6 +806,7 @@ st.markdown(
         <a href="#platforms">Platforms</a>
         <a href="#vision">Vision</a>
         <a href="#skills">Skills</a>
+        <a href="#languages">Languages</a>
         <a href="#volunteer">Volunteer</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
@@ -734,13 +817,13 @@ st.markdown(
 
 st.markdown("<div id='hero'></div>", unsafe_allow_html=True)
 st.markdown("<section class='hero'>", unsafe_allow_html=True)
-if PROFILE["banner"]:
+if image_exists(PROFILE["banner"]):
     st.markdown("<div class='hero-banner'>", unsafe_allow_html=True)
     st.image(PROFILE["banner"], use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 hero_left, hero_right = st.columns([0.28, 0.72], vertical_alignment="center")
 with hero_left:
-    if PROFILE["photo"]:
+    if image_exists(PROFILE["photo"]):
         st.image(PROFILE["photo"], use_container_width=True)
     else:
         st.markdown(
@@ -813,15 +896,11 @@ for col, project in zip(project_cols, PROJECTS):
 st.write("")
 section_header("experience", "Experience", "Programs, writing, teaching, translation, and creative work that shaped my professional growth.")
 for item in EXPERIENCE:
-    st.markdown(
-        f"""
-        <div class="section-card" style="margin-bottom: 1rem;">
-            <div class="project-title">{item["role"]}</div>
-            <p class="small-muted"><strong>{item["org"]}</strong> | {item["meta"]}</p>
-            {render_bullet_list(item["details"])}
-        </div>
-        """,
-        unsafe_allow_html=True,
+    render_logo_card(
+        title=item["role"],
+        subtitle=f"<strong>{item['org']}</strong> | {item['meta']}",
+        bullets=item["details"],
+        logo=item.get("logo", ""),
     )
 
 st.write("")
@@ -829,15 +908,11 @@ section_header("education", "Education", "My academic background and student com
 edu_cols = st.columns(2)
 for col, item in zip(edu_cols, EDUCATION):
     with col:
-        st.markdown(
-            f"""
-            <div class="section-card">
-                <div class="project-title">{item["school"]}</div>
-                <p class="small-muted"><strong>{item["degree"]}</strong><br>{item["date"]}</p>
-                {render_bullet_list(item["details"])}
-            </div>
-            """,
-            unsafe_allow_html=True,
+        render_logo_card(
+            title=item["school"],
+            subtitle=f"<strong>{item['degree']}</strong><br>{item['date']}",
+            bullets=item["details"],
+            logo=item.get("logo", ""),
         )
 
 st.write("")
@@ -910,17 +985,18 @@ skill_html = "".join(f"<div class='chip'>{skill}</div>" for skill in SKILLS)
 st.markdown(f"<div class='section-card'>{skill_html}</div>", unsafe_allow_html=True)
 
 st.write("")
+section_header("languages", "Languages", "Languages I use in academic, professional, and daily communication.")
+language_html = "".join(f"<div class='chip'>{language}</div>" for language in LANGUAGES)
+st.markdown(f"<div class='section-card'>{language_html}</div>", unsafe_allow_html=True)
+
+st.write("")
 section_header("volunteer", "Volunteering", "Community work and service experiences that matter to me.")
 for item in VOLUNTEER:
-    st.markdown(
-        f"""
-        <div class="section-card" style="margin-bottom: 1rem;">
-            <div class="project-title">{item["role"]}</div>
-            <p class="small-muted"><strong>{item["org"]}</strong> | {item["meta"]}</p>
-            <p class="small-muted">{item["description"]}</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
+    render_logo_card(
+        title=item["role"],
+        subtitle=f"<strong>{item['org']}</strong> | {item['meta']}",
+        body=item["description"],
+        logo=item.get("logo", ""),
     )
 
 st.write("")
@@ -928,15 +1004,11 @@ section_header("certificates", "Certificates", "Selected certificates, participa
 cert_cols = st.columns(2)
 for index, cert in enumerate(CERTIFICATES):
     with cert_cols[index % 2]:
-        st.markdown(
-            f"""
-            <div class="section-card" style="margin-bottom: 1rem;">
-                <div class="project-title">{cert["title"]}</div>
-                <p class="small-muted"><strong>{cert["issuer"]}</strong><br>{cert["date"]}</p>
-                <p class="small-muted">{cert["description"]}</p>
-            </div>
-            """,
-            unsafe_allow_html=True,
+        render_logo_card(
+            title=cert["title"],
+            subtitle=f"<strong>{cert['issuer']}</strong><br>{cert['date']}",
+            body=cert["description"],
+            logo=cert.get("logo", ""),
         )
 
 st.write("")
@@ -951,6 +1023,3 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-
-

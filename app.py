@@ -257,7 +257,8 @@ COURSES = [
 PLATFORMS = [
     ("GitHub", "https://github.com/aybikeyesm"),
     ("LinkedIn", "https://www.linkedin.com/in/aybikeyesimeskibozkurt"),
-    ("Instagram", "https://instagram.com/"),
+    ("Instagram", "https://www.instagram.com/physio.aybike/"),
+    ("ResearchGate", "https://www.researchgate.net/profile/Aybike-Eskibozkurt?ev=hdr_xprf"),
     ("Email", "mailto:aybikeeskibozkurt@gmail.com"),
 ]
 
@@ -656,6 +657,7 @@ def inject_styles() -> None:
         h1, h2, h3 {{
             font-family: "Space Grotesk", sans-serif !important;
             letter-spacing: -0.03em;
+            color: var(--text) !important;
         }}
 
         .nav-wrap {{
@@ -720,7 +722,7 @@ def inject_styles() -> None:
             font-size: clamp(2.4rem, 7vw, 5rem);
             line-height: 0.95;
             margin: 1rem 0 0.7rem 0;
-            color: var(--text);
+            color: var(--text) !important;
             text-shadow: {"0 2px 12px rgba(0, 0, 0, 0.28)" if theme_name == "Dark" else "none"};
         }}
 
@@ -771,7 +773,7 @@ def inject_styles() -> None:
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--text);
+            color: var(--text) !important;
         }}
 
         .stat-label, .small-muted {{
@@ -797,7 +799,7 @@ def inject_styles() -> None:
         .section-title {{
             font-size: 2rem;
             margin: 0 0 0.4rem 0;
-            color: var(--text);
+            color: var(--text) !important;
         }}
 
         .section-copy {{
@@ -811,6 +813,18 @@ def inject_styles() -> None:
             font-family: "Space Grotesk", sans-serif;
             font-size: 1.02rem;
             margin-bottom: 0.35rem;
+            color: var(--text) !important;
+        }}
+
+        .section-card h1,
+        .section-card h2,
+        .section-card h3,
+        .project-card h1,
+        .project-card h2,
+        .project-card h3,
+        .entry-wrap h1,
+        .entry-wrap h2,
+        .entry-wrap h3 {{
             color: var(--text) !important;
         }}
 
